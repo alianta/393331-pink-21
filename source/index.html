@@ -104,13 +104,52 @@
         <div class="reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы о нас</h2>
           <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item">
+            <blockquote class="reviews__item slider__item slider__item--current">
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               <span class="reviews__author-info">25 лет, водитель трамвая</span>
             </blockquote>
             <button class="reviews__prev" type="button">Предыдущий отзыв</button>
             <button class="reviews__next" type="button">Следующий отзыв</button>
+          </div>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--current" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+      <section class="tariffs">
+        <div class="tariffs__wrapper slider">
+          <h2 class="visually-hidden">Тарифы</h2>
+          <div class="tariffs__list slider__list">
+            <div class="tariffs-item slider__item">
+              <div class="tariffs-item-title">
+                <span class="tariffs-item-name">База</span>
+                <span class="tariffs-item-price">1,99 USD</span>
+              </div>
+              <div class="tariffs-item-option">Розовый фильтр</div>
+              <div class="tariffs-item-option tariffs-item-option--unavailable">Смайлики</div>
+              <div class="tariffs-item-option tariffs-item-option--unavailable">Комментарии</div>
+            </div>
+            <div class="tariffs-item slider__item slider__item--current slider__item--hit">
+              <div class="tariffs-item-title">
+                <span class="tariffs-item-name">Стандарт</span>
+                <span class="tariffs-item-price">3,99 USD</span>
+              </div>
+              <div class="tariffs-item-option">Розовый фильтр</div>
+              <div class="tariffs-item-option">Смайлики</div>
+              <div class="tariffs-item-option tariffs-item-option--unavailable">Комментарии</div>
+            </div>
+            <div class="tariffs-item slider__item">
+              <div class="tariffs-item-title">
+                <span class="tariffs-item-name">Анлим</span>
+                <span class="tariffs-item-price">9,99 USD</span>
+              </div>
+              <div class="tariffs-item-option">Розовый фильтр</div>
+              <div class="tariffs-item-option">Смайлики</div>
+              <div class="tariffs-item-option">Комментарии</div>
+            </div>
           </div>
           <p class="reviews__toggles slider__toggles">
             <button class="slider__toggle slider__toggle--current" type="button">1</button>
