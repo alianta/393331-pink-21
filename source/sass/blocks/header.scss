@@ -1,4 +1,27 @@
 .header{
   color: $color-white-1;
-  background-color: $color-black-opacity-30;
+  background-color: $color-blue-1;
+
+  .main-nav__list{
+    list-style: none;
+    font-weight: bold;
+    line-height: 32px;
+    font-size: 18px;
+    align-items: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .main-nav__item{
+    min-height: 63px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 1px 0px $color-black-1, inset 0px 1px 0px $color-white-opacity-15;
+  }
+  .main-nav__link{
+    color: $color-white-1;
+    text-decoration: none;
+  }
 }
