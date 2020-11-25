@@ -1,7 +1,8 @@
 .header{
+  min-height: 66px;
   color: $color-white-1;
-  background-color: $color-blue-1;
-
+  background-color: $color-black-opacity-30;
+  z-index: 1;
   .main-nav__list{
     list-style: none;
     font-weight: bold;
@@ -16,6 +17,8 @@
   }
   .main-nav__item{
     min-height: 63px;
+    padding: 25px 20px;
+    box-sizing: border-box;
     width: 100%;
     text-align: center;
     box-shadow: 0px 1px 0px $color-black-1, inset 0px 1px 0px $color-white-opacity-15;

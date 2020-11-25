@@ -4,9 +4,9 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
   .page__body{
     margin: 0;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
   }
 }
