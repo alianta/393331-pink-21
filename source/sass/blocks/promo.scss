@@ -1,0 +1,25 @@
+.promo {
+  text-align: center;
+  padding: 0 20px;
+  border-bottom: 1px solid $color-white-1;
+  position: relative;
+
+  .promo__question,
+  .promo__answer {
+    margin: 36px 0;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 35px solid $color-gray-1;
+    border-left: 320px solid $color-white-1;
+    position: absolute;
+    left: 0;
+    bottom: -35px;
+  }
+}
