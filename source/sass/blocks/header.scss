@@ -1,9 +1,10 @@
-.header{
+.header {
   min-height: 66px;
   color: $color-white-1;
   background-color: $color-black-opacity-30;
   z-index: 1;
-  .main-nav__list{
+
+  .main-nav__list {
     list-style: none;
     font-weight: bold;
     line-height: 32px;
@@ -15,15 +16,17 @@
     flex-wrap: wrap;
     padding: 0;
   }
-  .main-nav__item{
+
+  .main-nav__item {
     min-height: 63px;
     padding: 25px 20px;
     box-sizing: border-box;
     width: 100%;
     text-align: center;
-    box-shadow: 0px 1px 0px $color-black-1, inset 0px 1px 0px $color-white-opacity-15;
+    box-shadow: 0 1px 0 $color-black-1, inset 0 1px 0 $color-white-opacity-15;
   }
-  .main-nav__link{
+
+  .main-nav__link {
     color: $color-white-1;
     text-decoration: none;
   }

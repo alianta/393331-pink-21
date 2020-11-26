@@ -1,34 +1,40 @@
-.app{
+.app {
   padding: 28px 20px 38px 20px;
   background-color: $color-blue-2;
-  color:$color-white-1;
+  color: $color-white-1;
   text-align: center;
-  .app__platform-list{
+
+  .app__platform-list {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 32px;
     margin-bottom: 28px;
   }
-  .app__platform-item{
+
+  .app__platform-item {
     background-repeat: no-repeat;
-    &--apple{
+
+    &--apple {
       width: 47px;
       height: 56px;
-      background-image: url('../../img/apple-logo.svg');
+      background-image: url("../../img/apple-logo.svg");
     }
-    &--android{
+
+    &--android {
       width: 43px;
       height: 47px;
-      background-image: url('../../img/android-logo.svg');
+      background-image: url("../../img/android-logo.svg");
     }
-    &--windows{
+
+    &--windows {
       width: 44px;
       height: 41px;
-      background-image: url('../../img/microsoft-logo.svg');
+      background-image: url("../../img/microsoft-logo.svg");
     }
   }
-  .app__platform-information{
+
+  .app__platform-information {
     margin: 28px 0 0 0;
   }
 }
