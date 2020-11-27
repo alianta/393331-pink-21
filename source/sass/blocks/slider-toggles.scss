@@ -2,24 +2,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
-  .slider-toggles__item {
-    display: inline-block;
-    vertical-align: top;
-    width: 6px;
-    height: 6px;
-    margin-left: 19px;
-    background-color: gray;
-    border-radius: 50%;
-    cursor: pointer;
+.slider-toggles__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 6px;
+  height: 6px;
+  margin-left: 19px;
+  background-color: gray;
+  border-radius: 50%;
+  cursor: pointer;
 
-    &:first-child {
-      margin-left: 0;
-    }
+  &:first-child {
+    margin-left: 0;
+  }
 
-    &--current {
-      background: $color-white-1;
-      border: 3px solid $color-blue-1;
-    }
+  &--current {
+    background: $color-white-1;
+    border: 3px solid $color-blue-1;
   }
 }
