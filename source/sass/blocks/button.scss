@@ -10,3 +10,14 @@
   font-weight: bold;
   line-height: 18px;
 }
+
+.button--second-type {
+  margin: 0 20px;
+  text-transform: uppercase;
+  padding: 23px;
+  background-color: $color-green-2;
+  border: 2px solid $color-green-2;
+  border-radius: 1px;
+  min-width: 276px;
+  min-height: 59px;
+}

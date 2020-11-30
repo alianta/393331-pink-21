@@ -1,7 +1,7 @@
-/*.form {
-
-}*/
-
+.form {
+  display: flex;
+  flex-direction: column;
+}
 .form__section {
   display: flex;
   flex-direction: column;
@@ -103,4 +103,9 @@
   padding: 22px 20px;
   border: 2px solid $color-gray-2;
   border-radius: 1px;
+}
+
+.form__required-insrtuction {
+  text-align: center;
+  display: block;
 }
