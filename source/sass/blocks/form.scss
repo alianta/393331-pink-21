@@ -1,11 +1,18 @@
-.form {
-  padding: 20px;
-}
+/*.form {
+
+}*/
 
 .form__section {
   display: flex;
   flex-direction: column;
+  position: relative;
   border: none;
+  padding: 20px;
+
+  &--secondary {
+    background-color: $color-gray-1;
+    padding: 42px 20px;
+  }
 }
 
 .form__legend {
@@ -29,6 +36,36 @@
   border-radius: 1px;
   font-size: 18px;
   line-height: 30px;
+}
+
+.form__checkbox+label {
+  position: relative;
+  padding-left: 58px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    background: $color-white-1;
+    border: 2px solid $color-gray-2;
+    border-radius: 1px;
+  }
+}
+
+.form__checkbox:checked+label::before {
+  background-image: url("../../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__checkbox-label {
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-blue-1;
 }
 
 .form__textarea {
