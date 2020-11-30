@@ -5,10 +5,15 @@
 .form__section {
   display: flex;
   flex-direction: column;
+  border: none;
+}
 
-  &--no-border {
-    border: none;
-  }
+.form__legend {
+  width: 100%;
+  text-align: center;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $color-red-1;
 }
 
 .form__text-label {
@@ -26,3 +31,9 @@
   line-height: 30px;
 }
 
+.form__textarea {
+  height: 153px;
+  padding: 22px 20px;
+  border: 2px solid $color-gray-2;
+  border-radius: 1px;
+}
