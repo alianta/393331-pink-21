@@ -1,0 +1,17 @@
+.pop-up {
+  text-align: center;
+}
+
+.pop-up__header {
+  font-size: 18px;
+}
+
+.pop-up__send{
+  padding-top:52px;
+  padding-bottom: 52px;
+
+  &--success {
+    background: $color-gray-1;
+    border-radius: 0px 0px 1px 1px;
+  }
+}
