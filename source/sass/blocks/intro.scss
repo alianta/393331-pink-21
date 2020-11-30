@@ -1,13 +1,27 @@
 .intro {
-  min-height: 462px;
+  position: relative;
+  min-height: 400px;
   margin-top: -66px;
   text-align: center;
   font-weight: normal;
   color: $color-white-1;
-  background-image: url("../../img/intro-back-mobile.jpg");
+  background-image: url("../../img/intro-back.jpg");
   background-color: $color-blue-2;
   background-repeat: no-repeat;
   border-top: 1px solid $color-black-opacity-30;
+  &--phone {
+    min-height: 462px;
+    &::after {
+      content: " ";
+      background-image: url("../../img/phone-heand-mobile.png");
+      background-repeat: no-repeat;
+      height: 286px;
+      width: 320px;
+      display: block;
+      bottom: 0;
+      position: absolute;
+    }
+  }
 }
 
 .intro__slogan {
@@ -16,4 +30,20 @@
   font-size: 24px;
   font-weight: normal;
   line-height: 28.8px;
+}
+
+.intro__header {
+  margin-top: 92px;
+  margin-bottom: 50px;
+  padding: 0 20px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 33px;
+}
+
+.intro__text {
+  padding: 54px 20px;
+  background-color: $color-white-1;
+  color: $color-blue-1;
+  line-height: 30px;
 }
