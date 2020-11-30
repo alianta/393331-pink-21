@@ -6,12 +6,12 @@
   font-size: 18px;
 }
 
-.pop-up__send{
-  padding-top:52px;
+.pop-up__send {
+  padding-top: 52px;
   padding-bottom: 52px;
 
   &--success {
     background: $color-gray-1;
-    border-radius: 0px 0px 1px 1px;
+    border-radius: 0 0 1px 1px;
   }
 }
