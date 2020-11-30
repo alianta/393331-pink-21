@@ -9,8 +9,10 @@
   background-color: $color-blue-2;
   background-repeat: no-repeat;
   border-top: 1px solid $color-black-opacity-30;
+
   &--phone {
     min-height: 462px;
+
     &::after {
       content: " ";
       background-image: url("../../img/phone-heand-mobile.png");
