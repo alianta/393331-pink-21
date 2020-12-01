@@ -21,3 +21,13 @@
   min-width: 276px;
   min-height: 59px;
 }
+
+.button--form-send {
+  border-color: $color-red-1;
+  color: $color-red-1;
+}
+
+.button--form-cancel {
+  border-color: $color-blue-opacity-10;
+  color: $color-blue-opacity-10;
+}
