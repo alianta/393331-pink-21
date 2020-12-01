@@ -1,0 +1,21 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 14px;
+  min-width: 48px;
+  min-height: 48px;
+  background: $color-white-1;
+  border: 3px solid $color-blue-opacity-10;
+  border-radius: 50%;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,21 @@
+.capabilities {
+  background-color: $color-gray-1;
+  background-image: url("../../img/iphone-hello-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 50% 107%;
+  color: $color-blue-1;
+  text-align: center;
+  padding: 88px 26px 285px 26px;
+}
+
+.capabilities__name {
+  margin-top: 43px;
+  margin-bottom: 24px;
+  color: $color-black-1;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.capabilities__description {
+  margin: 24px 0 43px 0;
+}

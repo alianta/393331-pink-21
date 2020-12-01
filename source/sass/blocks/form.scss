@@ -1,0 +1,112 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: none;
+  padding: 20px;
+
+  &--secondary {
+    background-color: $color-gray-1;
+    padding: 42px 20px;
+  }
+}
+
+.form__legend {
+  width: 100%;
+  text-align: center;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $color-red-1;
+}
+
+.form__text-label {
+  color: $color-red-1;
+  text-transform: uppercase;
+  padding: 29px 23px 17px 23px;
+}
+
+.form__input-text {
+  padding: 0 20px;
+  min-height: 59px;
+  border: 2px solid $color-gray-2;
+  border-radius: 1px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form__checkbox + label {
+  position: relative;
+  padding-left: 58px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    background: $color-white-1;
+    border: 2px solid $color-gray-2;
+    border-radius: 1px;
+  }
+}
+
+.form__checkbox:checked + label::before {
+  background-image: url("../../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__checkbox-label {
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-blue-1;
+}
+
+.form__radio + label {
+  position: relative;
+  padding-left: 58px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 25%;
+    width: 37px;
+    height: 37px;
+    background: $color-white-1;
+    border: 2px solid $color-gray-2;
+    border-radius: 50%;
+  }
+}
+
+.form__radio:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 29px;
+  width: 15px;
+  height: 15px;
+  background: $color-red-1;
+  border-radius: 50%;
+}
+
+.form__textarea {
+  height: 153px;
+  padding: 22px 20px;
+  border: 2px solid $color-gray-2;
+  border-radius: 1px;
+}
+
+.form__required-insrtuction {
+  text-align: center;
+  display: block;
+}
