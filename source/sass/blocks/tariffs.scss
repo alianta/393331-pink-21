@@ -1,4 +1,16 @@
 .tariffs {
+  position: relative;
   background-color: $color-gray-1;
   padding: 100px 20px 40px 20px;
+
+  &::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 35px solid $color-gray-1;
+    border-left: 100vw solid $color-white-1;
+    position: absolute;
+    left: 0;
+    top: -35px;
+  }
 }

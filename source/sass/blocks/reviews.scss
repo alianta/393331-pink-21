@@ -1,19 +1,7 @@
 .reviews {
-  position: relative;
   padding: 50px 20px;
   line-height: 30px;
   text-align: center;
-
-  &::after {
-    content: "";
-    width: 0;
-    height: 0;
-    border-bottom: 35px solid $color-gray-1;
-    border-left: 320px solid $color-white-1;
-    position: absolute;
-    left: 0;
-    bottom: -35px;
-  }
 }
 
 .reviews__item {

@@ -2,19 +2,7 @@
   text-align: center;
   padding: 0 20px;
   border-bottom: 1px solid $color-white-1;
-  position: relative;
   color: $color-blue-1;
-
-  &::after {
-    content: "";
-    width: 0;
-    height: 0;
-    border-bottom: 35px solid $color-gray-1;
-    border-left: 320px solid $color-white-1;
-    position: absolute;
-    left: 0;
-    bottom: -35px;
-  }
 }
 
 .promo__question,
