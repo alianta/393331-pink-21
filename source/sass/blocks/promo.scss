@@ -3,6 +3,18 @@
   padding: 0 20px;
   border-bottom: 1px solid $color-white-1;
   color: $color-blue-1;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 35px solid $color-gray-1;
+    border-left: 100vw solid $color-white-1;
+    position: absolute;
+    left: 0;
+    bottom: -35px;
+  }
 }
 
 .promo__question,

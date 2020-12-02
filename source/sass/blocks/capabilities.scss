@@ -6,18 +6,6 @@
   color: $color-blue-1;
   text-align: center;
   padding: 88px 26px 285px 26px;
-  position: relative;
-
-  &::before {
-    content: "";
-    width: 0;
-    height: 0;
-    border-bottom: 35px solid $color-gray-1;
-    border-left: 100vw solid $color-white-1;
-    position: absolute;
-    left: 0;
-    top: -35px;
-  }
 }
 
 .capabilities__name {
