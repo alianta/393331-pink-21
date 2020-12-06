@@ -15,6 +15,11 @@
     border-top: 35px solid $color-white-1;
     z-index: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
 }
 
 .contacts__header {
@@ -32,7 +37,5 @@
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 68px;
-    padding-left: 230px;
-    padding-right: 230px;
   }
 }
