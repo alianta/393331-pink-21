@@ -3,4 +3,19 @@
   color: $color-white-1;
   background-color: $color-black-opacity-30;
   z-index: 1;
+  padding: 21px 20px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    min-height: 110px;
+    padding-bottom: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 110px;
+    padding-bottom: 43px;
+    padding-left: 130px;
+    padding-right: 130px;
+    display: flex;
+  }
 }
