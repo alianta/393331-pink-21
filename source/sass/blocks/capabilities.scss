@@ -20,7 +20,7 @@
     transform: translateX(-50%);
 
     @media (min-width: $tablet-width) {
-      left:0;
+      left: 0;
       transform: translateY(-50%), translateX(0);
     }
 
@@ -29,11 +29,11 @@
     }
   }
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     padding-bottom: 20px;
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     padding-left: 130px;
     padding-right: 130px;
   }
@@ -54,6 +54,7 @@
     width: 100%;
   }
 }
+
 .capabilities__name {
   margin-top: 43px;
   margin-bottom: 24px;
