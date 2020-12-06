@@ -14,9 +14,23 @@
   color: $color-white-1;
   border-left: 2px solid $color-gray-1;
   background: $color-blue-1;
+  position: relative;
+  overflow: hidden;
 
   &--empty {
     background-color: $color-gray-1;
+  }
+
+  &--hit{
+    &::after {
+      content: "ХИТ";
+      background-color: $color-red-1;
+      position: absolute;
+      transform: rotate(-45deg);
+      min-width: 100px;
+      left: -24px;
+      top: 16px;
+    }
   }
 }
 
