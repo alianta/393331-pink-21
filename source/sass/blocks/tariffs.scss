@@ -13,4 +13,10 @@
     padding-left: 130px;
     padding-right: 130px;
   }
+
+  .slider-toggles {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
