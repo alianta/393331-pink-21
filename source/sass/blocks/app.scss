@@ -3,6 +3,11 @@
   background-color: $color-blue-2;
   color: $color-white-1;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 340px;
+    background: none;
+  }
 }
 
 .app__platform-list {
