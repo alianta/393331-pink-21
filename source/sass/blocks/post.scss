@@ -1,10 +1,29 @@
 .post {
   color: $color-blue-1;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 48%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 32%;
+  }
+
+  &--panorama-of-day {
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+  }
 }
 
 .post__data {
   background-color: $color-gray-1;
+  padding: 25px 17px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px;
+  }
 }
 
 .post__author {
@@ -18,10 +37,18 @@
 .post__time {
   font-weight: 300;
   text-transform: uppercase;
+  font-size: 12px;
 }
 
 .post__liking {
   font-size: 12px;
   text-transform: uppercase;
   color: $color-red-1;
+}
+
+.post__foto {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
