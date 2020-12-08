@@ -8,6 +8,10 @@
     max-width: 340px;
     background: none;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 130px;
+  }
 }
 
 .app__platform-list {

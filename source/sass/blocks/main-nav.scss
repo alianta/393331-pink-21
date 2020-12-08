@@ -7,12 +7,12 @@
 
   &--opend {
     display: block;
+    background-color: $color-blue-1;
   }
 
   @media (min-width: $desktop-width) {
-    &--closed {
-      display: block;
-    }
+    display: block;
+    background-color: $color-full-opacity;
   }
 }
 
