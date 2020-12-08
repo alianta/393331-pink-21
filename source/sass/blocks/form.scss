@@ -1,6 +1,38 @@
 .form {
   display: flex;
   flex-direction: column;
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    >:nth-child(1),
+    >:nth-child(4) {
+      order: -3;
+    }
+
+    >:nth-child(3) {
+      order: -2;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    >:nth-child(2),
+    >:nth-child(5) {
+      order: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 130px;
+    padding-right: 130px;
+
+    :nth-child(1),
+    :nth-child(4) {
+      width: 44%;
+    }
+  }
 }
 
 .form__section {
@@ -8,11 +40,11 @@
   flex-direction: column;
   position: relative;
   border: none;
-  padding: 20px;
+  width:100%;
 
   &--secondary {
     background-color: $color-gray-1;
-    padding: 42px 20px;
+    //margin: 42px 20px;
   }
 }
 
@@ -108,5 +140,4 @@
 
 .form__required-insrtuction {
   text-align: center;
-  display: block;
 }
