@@ -24,10 +24,21 @@
   &--form-send {
     border-color: $color-red-1;
     color: $color-red-1;
+    width: 100%;
+    margin-right: auto;
+
+    @media (min-width: $desktop-width) {
+      width: 43%;
+    }
   }
 
   &--form-cancel {
     border-color: $color-blue-opacity-10;
     color: $color-blue-opacity-10;
+    width: 100%;
+
+    @media (min-width: $desktop-width) {
+      width: 43%;
+    }
   }
 }
