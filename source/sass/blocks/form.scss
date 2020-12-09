@@ -73,6 +73,7 @@
       flex-wrap: wrap;
       justify-content: space-around;
       padding: 54px 61px 57px 62px;
+
       label {
         width: 26%;
       }
@@ -85,12 +86,13 @@
   flex-direction: column;
   position: relative;
   border: none;
-  width:100%;
+  width: 100%;
   margin: 35px 0;
 
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
   }
+
   @media (min-width: $desktop-width) {
     padding: 44px 60px;
   }
