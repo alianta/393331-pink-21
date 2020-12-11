@@ -12,4 +12,9 @@
 .developer__hedaer {
   font-weight: normal;
   font-size: 14px;
+  margin-right: 14px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }

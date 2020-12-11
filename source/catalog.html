@@ -131,17 +131,20 @@
         <p class="aggitation__text">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
       </div>
       <form class="post-form" id="post-form"  action="https://echo.htmlacademy.ru/" method="get">
-        <label class="post-form__file-label visually-hidden" for="foto"><img class="post-form__foto" src="https://via.placeholder.com/280x374" width="280" height="374" alt=""></label>
+        <div class="post-form__image-block">
+          <label class="post-form__file-label visually-hidden" for="foto"><img class="post-form__foto" src="https://via.placeholder.com/280x374" width="280" height="374" alt=""></label>
         <input class="post-form__file" type="file" id="foto" name="foto">
-
-        <label class="post-form__label visually-hidden" for="cut">Обрезать изображение</label>
-        <input class="post-form__filter" type="range" id="cut" name="cut" min="0" max="100" step="1" value="50">
-        <label class="post-form__label visually-hidden" for="fill">Перекрасить изображение</label>
-        <input class="post-form__filter" type="range" id="fill" name="fill" min="0" max="100" step="1" value="50">
-        <label class="post-form__label visually-hidden" for="contrast">Изменить контраст изображения</label>
-        <input class="post-form__filter" type="range" id="contrast" name="contrast" min="0" max="100" step="1" value="50">
-        <button class="button button--first-type button--form-send" type="submit">Запостить</button>
-        <button class="button button--first-type button--form-cancel" type="reset">Отмена</button>
+        </div>
+        <div class="post-form__filter-block">
+          <label class="post-form__label visually-hidden" for="cut">Обрезать изображение</label>
+          <input class="post-form__filter" type="range" id="cut" name="cut" min="0" max="100" step="1" value="50">
+          <label class="post-form__label visually-hidden" for="fill">Перекрасить изображение</label>
+          <input class="post-form__filter" type="range" id="fill" name="fill" min="0" max="100" step="1" value="50">
+          <label class="post-form__label visually-hidden" for="contrast">Изменить контраст изображения</label>
+          <input class="post-form__filter" type="range" id="contrast" name="contrast" min="0" max="100" step="1" value="50">
+          <button class="button button--first-type button--form-send" type="submit">Запостить</button>
+          <button class="button button--first-type button--form-cancel" type="reset">Отмена</button>
+        </div>
       </form>
     </main>
     <footer class="footer">

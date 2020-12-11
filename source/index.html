@@ -12,7 +12,7 @@
         <img class="logo__image" src="https://via.placeholder.com/59x40" width="59" height="40" alt="">
         <img class="logo__text" src="https://via.placeholder.com/74x23" width="74" height="23" alt="Pink">
       </a>
-      <nav class="main-nav visually-hidden">
+      <nav class="main-nav main-nav--opend main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -33,40 +33,45 @@
     <main class="main">
       <h1 class="visually-hidden">Pink - приложение для вашего настроения.</h1>
       <section class="intro intro--phone">
-        <h2 class="intro__slogan">Взгляните на жизнь иначе!</h2>
-      </section>
-      <div class="app">
-        <h2 class="visually-hidden">Наше приложение доступно на любых устройствах.</h2>
-        <a class="button button--first-type" href="#">Скачать приложение</a>
-        <div class="app__platform-list">
-          <a class="app__platform-item app__platform-item--apple" href="#" aria-label="Apple"></a>
-          <a class="app__platform-item app__platform-item--android" href="#" aria-label="Android"></a>
-          <a class="app__platform-item app__platform-item--windows" href="#" aria-label="Windows"></a>
+        <h2 class="intro__slogan">Взгляните на&nbsp;жизнь иначе!</h2>
+        <div class="app">
+          <h2 class="visually-hidden">Наше приложение доступно на любых устройствах.</h2>
+          <a class="button button--first-type" href="#">Скачать приложение</a>
+          <div class="app__platform-list">
+            <a class="app__platform-item app__platform-item--apple" href="#" aria-label="Apple"></a>
+            <a class="app__platform-item app__platform-item--android" href="#" aria-label="Android"></a>
+            <a class="app__platform-item app__platform-item--windows" href="#" aria-label="Windows"></a>
+          </div>
+          <p class="app__platform-information">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
-        <p class="app__platform-information">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </div>
+      </section>
+
       <div class="promo">
         <h2 class="promo__question">Устали от серости мегаполиса?</h2>
-        <h2 class="promo__answer">Нам есть, что вам предложить!</h2>
+        <h2 class="promo__answer">Нам есть, что вам&nbsp;предложить!</h2>
       </div>
       <section class="capabilities">
         <h2 class="visually-hidden">Возможности нашего приложения.</h2>
         <dl class="capabilities__list">
-          <dt class="capabilities__name">Поднимает настроение</dt>
-          <dd class="capabilities__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</dd>
-
-          <dt class="capabilities__name">Меняет мир вокруг</dt>
-          <dd class="capabilities__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</dd>
-
-          <dt class="capabilities__name">Заводит новых друзей</dt>
-          <dd class="capabilities__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</dd>
+          <div class="capabilities__item">
+            <dt class="capabilities__name">Поднимает настроение</dt>
+            <dd class="capabilities__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</dd>
+          </div>
+          <div class="capabilities__item">
+            <dt class="capabilities__name">Меняет мир вокруг</dt>
+            <dd class="capabilities__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</dd>
+          </div>
+          <div class="capabilities__item">
+            <dt class="capabilities__name">Заводит<br>новых друзей</dt>
+            <dd class="capabilities__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</dd>
+          </div>
         </dl>
       </section>
-      <section class="research visually-hidden">
+      <section class="research">
         <h2 class="visually-hidden">Научное исследование эффективности.</h2>
         <p class="research__promo">Эффект на 24 часа!</p>
         <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-        <a class="research__promo" href="#">Узнать больше об исследовании</a>
+        <a class="research__link" href="#">Узнать больше об исследовании</a>
       </section>
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы о нас</h2>
@@ -184,5 +189,6 @@
         </a>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

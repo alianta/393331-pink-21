@@ -3,4 +3,13 @@
   flex-direction: column;
   flex-wrap: wrap;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 130px;
+  }
 }

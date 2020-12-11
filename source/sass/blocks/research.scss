@@ -1,0 +1,57 @@
+.research {
+  display: none;
+  padding: 17px 20px 67px;
+  background-image: url("../img/timer.svg");
+  background-repeat: no-repeat;
+  background-position-x: 20px;
+  background-position-y: 17px;
+  min-height: 429px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 130px;
+    padding-right: 130px;
+    background-color: $color-gray-1;
+    background-position-x: 130px;
+    background-size: 298px;
+  }
+}
+
+.research__promo,
+.research__text,
+.research__link {
+  margin-left: 50%;
+  margin-right: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 130px;
+    margin-left: 42%;
+    line-height: 30px;
+  }
+}
+
+.research__promo {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.research__text {
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.research__link {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $color-red-1;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}

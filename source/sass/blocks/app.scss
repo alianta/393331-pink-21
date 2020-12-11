@@ -3,6 +3,15 @@
   background-color: $color-blue-2;
   color: $color-white-1;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 340px;
+    background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 130px;
+  }
 }
 
 .app__platform-list {
@@ -19,19 +28,19 @@
   &--apple {
     width: 47px;
     height: 56px;
-    background-image: url("../../img/apple-logo.svg");
+    background-image: url("../img/apple-logo.svg");
   }
 
   &--android {
     width: 43px;
     height: 47px;
-    background-image: url("../../img/android-logo.svg");
+    background-image: url("../img/android-logo.svg");
   }
 
   &--windows {
     width: 44px;
     height: 41px;
-    background-image: url("../../img/microsoft-logo.svg");
+    background-image: url("../img/microsoft-logo.svg");
   }
 }
 

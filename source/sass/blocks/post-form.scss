@@ -3,4 +3,55 @@
   background-color: $color-gray-1;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-around;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+}
+
+.post-form__image-block {
+  @media (min-width: $tablet-width) {
+    width: 48%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 32%;
+  }
+}
+
+.post-form__filter-block {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 48%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 43%;
+  }
+}
+
+.post-form__filter {
+  width: 86%;
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: inherit;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70%;
+    float: right;
+  }
 }

@@ -5,7 +5,9 @@
   text-align: center;
   font-weight: normal;
   color: $color-white-1;
-  background-image: url("../../img/intro-back.jpg");
+  background-image: url("../img/intro-back.jpg");
+  background-position: center;
+  background-size: cover;
   background-color: $color-blue-2;
   background-repeat: no-repeat;
   border-top: 1px solid $color-black-opacity-30;
@@ -15,13 +17,15 @@
 
     &::after {
       content: " ";
-      background-image: url("../../img/phone-heand-mobile.png");
+      background-image: url("../img/phone-heand-mobile.png");
       background-repeat: no-repeat;
       height: 286px;
       width: 320px;
       display: block;
       bottom: 0;
       position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }
@@ -29,9 +33,22 @@
 .intro__slogan {
   margin-top: 92px;
   padding: 0 20px;
+  font-weight: 300;
   font-size: 24px;
-  font-weight: normal;
-  line-height: 28.8px;
+  line-height: 29px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 290px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 340px;
+    font-size: 50px;
+    line-height: 68px;
+    margin-left: 130px;
+  }
 }
 
 .intro__header {
