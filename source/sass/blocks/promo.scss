@@ -1,6 +1,6 @@
 .promo {
   text-align: center;
-  padding: 0 20px;
+  padding: 8px 20px 0 20px;
   border-bottom: 1px solid $color-white-1;
   color: $color-blue-1;
   position: relative;
@@ -9,17 +9,18 @@
     content: "";
     width: 0;
     height: 0;
-    border-bottom: 35px solid $color-gray-1;
+    border-bottom: 32px solid $color-gray-1;
     border-left: 100vw solid $color-white-1;
     position: absolute;
     left: 0;
-    bottom: -35px;
+    bottom: -32px;
+    z-index: 1;
   }
 }
 
 .promo__question,
 .promo__answer {
-  margin: 36px 0;
+  margin: 32px 0;
   font-weight: 300;
   font-size: 24px;
   line-height: 28px;
