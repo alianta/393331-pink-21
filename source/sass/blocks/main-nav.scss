@@ -36,10 +36,12 @@
   &::after {
     transform: rotate(-45deg);
   }
+
   &:hover::before,
   &:hover::after {
     background-color: $color-blue-1;
   }
+
   &:active::before,
   &:active::after {
     background-color: $color-blue-opacity-30;
@@ -57,19 +59,23 @@
       box-shadow: 0 10px 0 0 $color-white-1, 0 20px 0 0 $color-white-1;
       transform: none;
     }
+
     &:hover::before,
     &:focus::before {
       background-color: $color-red-1;
       box-shadow: 0 10px 0 0 $color-red-1, 0 20px 0 0 $color-red-1;
     }
+
     &:active::before {
       background-color: $color-red-opacity-30;
       box-shadow: 0 10px 0 0 $color-red-opacity-30, 0 20px 0 0 $color-red-opacity-30;
     }
+
     &::after {
       display: none;
     }
   }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
