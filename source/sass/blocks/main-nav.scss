@@ -1,15 +1,6 @@
 .main-nav {
   width: 100%;
 
-  &--closed {
-    display: none;
-  }
-
-  &--opend {
-    display: block;
-    background-color: $color-blue-1;
-  }
-
   @media (min-width: $desktop-width) {
     display: block;
     background-color: $color-full-opacity;
@@ -17,13 +8,71 @@
 }
 
 .main-nav__toggle {
+  position: relative;
+  margin-right: 20px;
+  margin-left: auto;
+  margin-top: -32px;
+  display: inherit;
+  width: 50px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 23px;
+    height: 2px;
+    background-color: $color-white-1;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+  &:hover::before,
+  &:hover::after {
+    background-color: $color-blue-1;
+  }
+  &:active::before,
+  &:active::after {
+    background-color: $color-blue-opacity-30;
+  }
+
+  &--closed {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50px;
+      height: 4px;
+      background-color: $color-white-1;
+      box-shadow: 0 10px 0 0 $color-white-1, 0 20px 0 0 $color-white-1;
+      transform: none;
+    }
+    &:hover::before,
+    &:focus::before {
+      background-color: $color-red-1;
+      box-shadow: 0 10px 0 0 $color-red-1, 0 20px 0 0 $color-red-1;
+    }
+    &:active::before {
+      background-color: $color-red-opacity-30;
+      box-shadow: 0 10px 0 0 $color-red-opacity-30, 0 20px 0 0 $color-red-opacity-30;
+    }
+    &::after {
+      display: none;
+    }
+  }
   @media (min-width: $desktop-width) {
     display: none;
   }
-}
-
-.main-nav--nojs .main-nav__toggle {
-  display: none;
 }
 
 .main-nav__list {
@@ -42,6 +91,11 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+  }
+
+  &--closed {
+    display: none;
+    background-color: $color-blue-1;
   }
 }
 
