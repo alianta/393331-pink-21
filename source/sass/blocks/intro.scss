@@ -1,28 +1,31 @@
 .intro {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 400px;
   margin-top: -66px;
   text-align: center;
   font-weight: normal;
   color: $color-white-1;
   background-image: url("../img/intro-back.jpg");
-  background-position: center;
-  background-size: cover;
+  background-position: center top;
+  background-size: 100%;
   background-color: $color-blue-2;
   background-repeat: no-repeat;
   border-top: 1px solid $color-black-opacity-30;
 
   &--phone {
-    min-height: 462px;
+    min-height: 733px;
 
-    &::after {
+    &::before {
       content: " ";
       background-image: url("../img/phone-heand-mobile.png");
       background-repeat: no-repeat;
       height: 286px;
       width: 320px;
       display: block;
-      bottom: 0;
+      top: 175px;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
@@ -31,7 +34,7 @@
 }
 
 .intro__slogan {
-  margin-top: 92px;
+  margin-top: 88px;
   padding: 0 20px;
   font-weight: 300;
   font-size: 24px;
