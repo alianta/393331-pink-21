@@ -2,7 +2,8 @@
   line-height: 30px;
   text-align: center;
   position: relative;
-  padding: 72px 20px 10px 20px;
+  padding: 40px 20px 36px 20px;
+  background-color: $color-white-1;
 
   @media (min-width: $desktop-width) {
     padding-left: 130px;
@@ -13,16 +14,17 @@
     content: "";
     width: 0;
     height: 0;
-    border-bottom: 35px solid $color-gray-1;
+    border-bottom: 20px solid $color-gray-1;
     border-left: 100vw solid $color-white-1;
     position: absolute;
     left: 0;
-    bottom: -35px;
+    bottom: -19px;
   }
 }
 
 .reviews__list {
   position: relative;
+  margin-bottom: 16px;
 }
 
 .reviews__item {
