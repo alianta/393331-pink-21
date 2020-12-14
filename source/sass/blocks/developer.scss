@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  min-width: 140px;
+  min-width: 130px;
   margin: 20px 0;
   color: $color-blue-1;
   line-height: 18px;
@@ -12,7 +12,6 @@
 .developer__hedaer {
   font-weight: normal;
   font-size: 14px;
-  margin-right: 14px;
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
