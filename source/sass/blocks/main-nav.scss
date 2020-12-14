@@ -9,11 +9,11 @@
 
 .main-nav__toggle {
   position: relative;
-  margin-right: 20px;
+  margin-right: 17px;
   margin-left: auto;
   margin-top: -32px;
   display: inherit;
-  width: 50px;
+  width: 28px;
   height: 24px;
   border: none;
   background-color: transparent;
@@ -22,9 +22,9 @@
   &::after {
     content: "";
     position: absolute;
-    left: 0;
-    width: 23px;
-    height: 2px;
+    right: 0;
+    width: 29px;
+    height: 3px;
     background-color: $color-white-1;
   }
 
@@ -48,6 +48,8 @@
   }
 
   &--closed {
+    width: 50px;
+
     &::before {
       content: "";
       position: absolute;
@@ -93,7 +95,9 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
-  margin: 0;
+  margin-bottom: 0;
+  margin-top: 24px;
+  box-shadow: 0 -1px 0 $color-black-opacity-30;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
@@ -107,7 +111,7 @@
 
 .main-nav__item {
   min-height: 63px;
-  padding: 25px 20px;
+  padding: 16px 20px;
   box-sizing: border-box;
   width: 100%;
   text-align: center;

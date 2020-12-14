@@ -1,7 +1,7 @@
 .header {
   min-height: 66px;
   color: $color-white-1;
-  background-color: $color-black-opacity-30;
+  background-color: $color-blue-1;
   z-index: 1;
   box-sizing: border-box;
 
@@ -17,4 +17,8 @@
     padding-right: 130px;
     display: flex;
   }
+}
+
+.header--nav-closed{
+  background-color: $color-black-opacity-30;
 }
