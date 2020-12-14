@@ -5,15 +5,4 @@
   background-repeat: no-repeat;
   min-width: 320px;
   min-height: 200px;
-
-  &::after {
-    content: "";
-    background-image: url("../img/map-marker.svg");
-    background-repeat: no-repeat;
-    width: 36px;
-    height: 36px;
-    position: absolute;
-    left: 42%;
-    top: 48%;
-  }
 }
