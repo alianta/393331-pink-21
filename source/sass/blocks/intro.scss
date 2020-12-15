@@ -8,19 +8,23 @@
   text-align: center;
   font-weight: normal;
   color: $color-white-1;
-  background-image: url("../img/intro-back.jpg");
+  background-image: url("../img/intro-back-mobile.jpg");
   background-position: center top;
   background-size: 100%;
   background-color: $color-blue-2;
   background-repeat: no-repeat;
   border-top: 1px solid $color-black-opacity-30;
 
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/intro-back-tablet.jpg");
+  }
+
   &--phone {
     min-height: 733px;
 
     &::before {
       content: " ";
-      background-image: url("../img/phone-heand-mobile.png");
+      background-image: url("../img/phone-hand-mobile.png");
       background-repeat: no-repeat;
       height: 286px;
       width: 320px;
@@ -29,6 +33,10 @@
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
+
+      @media (min-width: $tablet-width) {
+        background-image: url("../img/phone-hand-tablet.png");
+      }
     }
   }
 }

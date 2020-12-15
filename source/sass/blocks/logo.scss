@@ -9,7 +9,12 @@
   margin-right: 8px;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 27px;
+    path {
+      fill: $color-white-1;
+    }
   }
 }
 
@@ -19,4 +24,8 @@
   min-height: 46px;
   box-sizing: border-box;
   min-width: max-content;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
 }
