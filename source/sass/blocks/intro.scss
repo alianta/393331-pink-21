@@ -17,10 +17,12 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/intro-back-tablet.jpg");
+    margin-top: -109px;
+    justify-content: center;
+    min-height: 727px;
   }
 
   &--phone {
-    min-height: 733px;
 
     &::before {
       content: " ";
@@ -36,6 +38,10 @@
 
       @media (min-width: $tablet-width) {
         background-image: url("../img/phone-hand-tablet.png");
+        height: 545px;
+        width: 660px;
+        bottom: 0;
+        top: auto;
       }
     }
   }
@@ -49,9 +55,11 @@
   line-height: 29px;
 
   @media (min-width: $tablet-width) {
-    max-width: 290px;
+    max-width: 300px;
     font-size: 40px;
     line-height: 48px;
+    margin-bottom: 0;
+    margin-top: 122px;
   }
 
   @media (min-width: $desktop-width) {
