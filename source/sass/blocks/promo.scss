@@ -5,6 +5,10 @@
   color: $color-blue-1;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 30px;
+  }
+
   &::after {
     content: "";
     width: 0;
@@ -15,6 +19,11 @@
     left: 0;
     bottom: -32px;
     z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      border-bottom-width: 54px;
+      bottom: -54px;
+    }
   }
 }
 
