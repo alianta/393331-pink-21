@@ -7,6 +7,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    transform: none;
   }
 }
 
@@ -17,6 +18,10 @@
   position: relative;
   overflow: hidden;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 10px;
+  }
+
   &--empty {
     background-color: $color-gray-1;
   }
@@ -24,12 +29,15 @@
   &--hit {
     &::after {
       content: "ХИТ";
+      font-weight: normal;
       background-color: $color-red-1;
       position: absolute;
       transform: rotate(-45deg);
       min-width: 100px;
-      left: -24px;
-      top: 16px;
+      left: -30px;
+      top: 15px;
+      font-weight: normal;
+      line-height: 20px;
     }
   }
 }
@@ -61,14 +69,14 @@
 }
 
 .tariffs-table__option-name {
-  width: 88vw;
+  min-width: 123px;
   text-transform: uppercase;
   color: $color-blue-1;
   padding: 17px 20px;
 
   @media (min-width: $tablet-width) {
     text-transform: none;
-    padding: 17px 15px;
+    padding: 10px 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -86,7 +94,7 @@
   background-image: url("../img/no.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 88vw;
+  min-width: 150px;
 
   &--available {
     background-image: url("../img/yes.svg");
