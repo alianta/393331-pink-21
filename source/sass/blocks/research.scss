@@ -1,14 +1,15 @@
 .research {
   display: none;
-  padding: 17px 20px 67px;
-  background-image: url("../img/timer.svg");
-  background-repeat: no-repeat;
-  background-position-x: 20px;
-  background-position-y: 17px;
-  min-height: 429px;
 
   @media (min-width: $tablet-width) {
     display: block;
+    background-color: $color-white-1;
+    position: relative;
+    padding: 65px 20px;
+    background-image: url("../img/timer.svg");
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: 55%;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,9 +38,19 @@
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
+  }
 }
 
 .research__text {
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 18px;
   }
