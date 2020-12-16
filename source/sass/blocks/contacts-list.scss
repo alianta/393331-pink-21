@@ -8,19 +8,41 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
 .contacts-list__item {
   margin-bottom: 10px;
   margin-top: 10px;
+
+  @media (min-width: $tablet-width){
+    &:first-child{
+      margin-left: 47px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 29px;
+    }
+
+    &:last-child {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 31px;
+      max-width: 45%;
+    }
+  }
+
 }
 
 .contacts-list__item-name {
   display: block;
   font-weight: bold;
   font-size: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
+  }
 }
 
 .contacts-list__item-link {

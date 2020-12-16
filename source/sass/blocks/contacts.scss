@@ -14,6 +14,15 @@
     border-right: 50vw solid transparent;
     border-top: 35px solid $color-white-1;
     z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      bottom: -66px;
+      border-top-width: 67px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 13px;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,6 +41,8 @@
     line-height: 54px;
     padding-left: 120px;
     padding-right: 120px;
+    margin-top: 26px;
+    margin-bottom: 23px;
   }
 
   @media (min-width: $desktop-width) {
