@@ -6,4 +6,9 @@
   background-size: cover;
   min-width: 320px;
   min-height: 200px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 374px;
+    background-image: url("../img/map-tablet.png");
+  }
 }
