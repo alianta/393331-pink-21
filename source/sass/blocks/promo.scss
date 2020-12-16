@@ -46,11 +46,12 @@
 }
 
 .promo__question {
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     margin-top: 38px;
     margin-bottom: 0;
   }
 }
+
 .promo__answer {
   @media (min-width: $tablet-width) {
     max-width: 90%;

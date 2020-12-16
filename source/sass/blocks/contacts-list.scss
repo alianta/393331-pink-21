@@ -16,8 +16,8 @@
   margin-bottom: 10px;
   margin-top: 10px;
 
-  @media (min-width: $tablet-width){
-    &:first-child{
+  @media (min-width: $tablet-width) {
+    &:first-child {
       margin-left: 47px;
     }
 
@@ -32,7 +32,6 @@
       max-width: 45%;
     }
   }
-
 }
 
 .contacts-list__item-name {
