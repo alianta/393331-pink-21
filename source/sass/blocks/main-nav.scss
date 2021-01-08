@@ -1,20 +1,15 @@
 .main-nav {
   width: 100%;
-
-  @media (min-width: $desktop-width) {
-    display: block;
-    background-color: $color-full-opacity;
-  }
 }
 
 .main-nav__toggle {
   position: relative;
-  margin-right: 20px;
-  margin-left: auto;
-  margin-top: -32px;
   display: inherit;
   width: 28px;
   height: 24px;
+  margin-right: 20px;
+  margin-left: auto;
+  margin-top: -32px;
   border: none;
   background-color: transparent;
 
@@ -29,8 +24,8 @@
   }
 
   &::before {
-    transform: rotate(45deg);
     box-shadow: none;
+    transform: rotate(45deg);
   }
 
   &::after {
@@ -77,35 +72,23 @@
       display: none;
     }
   }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
 }
 
 .main-nav__list {
-  list-style: none;
-  font-weight: bold;
-  line-height: 32px;
-  font-size: 18px;
-  align-items: center;
-  text-transform: uppercase;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   padding: 0;
   margin-bottom: 0;
   margin-top: 24px;
+  list-style: none;
+  font-weight: bold;
+  line-height: 32px;
+  font-size: 18px;
   box-shadow: 0 -1px 0 $color-black-opacity-30;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 43px;
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-direction: row;
-  }
+  text-transform: uppercase;
 
   &--closed {
     display: none;
@@ -114,16 +97,12 @@
 }
 
 .main-nav__item {
-  min-height: 63px;
-  padding: 16px 20px;
   box-sizing: border-box;
   width: 100%;
+  min-height: 63px;
+  padding: 16px 20px;
   text-align: center;
   box-shadow: 0 1px 0 $color-black-1, inset 0 1px 0 $color-white-opacity-15;
-
-  @media (min-width: $desktop-width) {
-    width: min-content;
-  }
 }
 
 .main-nav__link {
@@ -131,4 +110,42 @@
   text-decoration: none;
   display: block;
   min-width: 150px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    margin-top: 43px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    display: block;
+    margin-left: 170px;
+    background-color: $color-full-opacity;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    text-transform: none;
+    font-weight: normal;
+    background-color: transparent;
+  }
+
+  .main-nav__item {
+    width: min-content;
+    min-height: auto;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .main-nav__link {
+    min-width: auto;
+  }
 }

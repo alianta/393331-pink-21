@@ -7,16 +7,6 @@
 .logo__image {
   display: none;
   margin-right: 8px;
-
-  @media (min-width: $tablet-width) {
-    display: inline-block;
-    margin-left: 20px;
-    margin-top: 27px;
-
-    path {
-      fill: $color-white-1;
-    }
-  }
 }
 
 .logo__text {
@@ -25,8 +15,26 @@
   min-height: 46px;
   box-sizing: border-box;
   min-width: max-content;
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .logo__image {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 27px;
+
+    path {
+      fill: $color-white-1;
+    }
+  }
+
+  .logo__text {
     padding-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    display: inherit;
   }
 }
