@@ -8,8 +8,8 @@
   width: 28px;
   height: 24px;
   margin-right: 20px;
-  margin-left: auto;
   margin-top: -32px;
+  margin-left: auto;
   border: none;
   background-color: transparent;
 
@@ -121,7 +121,8 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     display: block;
-    margin-left: 170px;
+    max-width: 620px;
+    padding-top: 8px;
     background-color: $color-full-opacity;
   }
 
@@ -132,6 +133,7 @@
   .main-nav__list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin: 0;
     text-transform: none;
     font-weight: normal;

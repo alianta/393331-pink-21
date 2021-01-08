@@ -1,5 +1,6 @@
 .header {
   z-index: 1;
+  padding-top: 23px;
   box-sizing: border-box;
   min-height: 66px;
   color: $color-white-1;
@@ -13,15 +14,16 @@
 @media (min-width: $tablet-width) {
   .header {
     min-height: 110px;
+    padding-top: 28px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .header {
-    display: flex;
-    align-items: center;
     min-height: 110px;
     padding-left: 130px;
     padding-right: 130px;
+    display: flex;
+    justify-content: space-between;
   }
 }
