@@ -1,3 +1,4 @@
+/* Меню навигации */
 var navMain = document.querySelector('.main-nav__list');
 var heder = document.querySelector('.header');
 var navToggle = document.querySelector('.main-nav__toggle');
@@ -11,3 +12,21 @@ navToggle.addEventListener('click', function() {
   heder.classList.toggle('header--nav-closed');
   navToggle.classList.toggle('main-nav__toggle--closed');
 });
+
+/* Интерактивная карта с индивидуальным маркером в виде логотипа */
+function showMap() {
+  const coordinates = {
+    lat: 59.93878500480984,
+    lng: 30.323052762558888
+  };
+  const image = "img/map-marker.svg";
+  const map = new google.maps.Map(document.getElementById("map"), {
+    center: coordinates,
+    zoom: 16
+  });
+  marker = new google.maps.Marker({
+    position: coordinates,
+    map: map,
+    icon: image
+  });
+}

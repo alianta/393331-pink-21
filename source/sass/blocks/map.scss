@@ -1,13 +1,15 @@
 .map {
   position: relative;
+  min-width: 320px;
+  min-height: 200px;
   background-color: $color-gray-2;
   background-image: url("../img/map-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
-  min-width: 320px;
-  min-height: 200px;
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .map {
     min-height: 374px;
     background-image: url("../img/map-tablet.png");
   }
