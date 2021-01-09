@@ -1,64 +1,31 @@
 .capabilities {
   position: relative;
+  padding: 63px 20px 288px 20px;
+  color: $color-blue-1;
   background-color: $color-gray-1;
   background-repeat: no-repeat;
   background-position: 50% 107%;
-  color: $color-blue-1;
   text-align: center;
-  padding: 66px 20px 288px 20px;
-
-  @media (min-width: $tablet-width) {
-    text-align: left;
-    padding-bottom: 1px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 130px;
-    padding-right: 130px;
-  }
 
   &::after {
     content: " ";
-    background-image: url("../img/iphone-hello-mobile.png");
-    background-repeat: no-repeat;
+    z-index: 1;
+    display: block;
+    position: absolute;
     height: 320px;
     width: 160px;
-    display: block;
     bottom: -42px;
-    position: absolute;
     left: 50%;
+    background-image: url("../img/iphone-hello-mobile.png");
+    background-repeat: no-repeat;
     transform: translateX(-50%);
-
-    @media (min-width: $tablet-width) {
-      left: 0;
-      background-image: url("../img/iphone-hello-tablet.png");
-      height: 547px;
-      width: 268px;
-      transform: translate(7%, 23px);
-    }
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
   }
 }
 
 .capabilities__list {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin-left: auto;
-    margin-top: 9px;
-    margin-bottom: 9px;
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-  }
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .capabilities__name {
@@ -66,25 +33,85 @@
   color: $color-black-1;
   font-weight: bold;
   font-size: 18px;
-
-  @media (min-width: $desktop-width) {
-    font-size: 30px;
-    line-height: 30px;
-    max-width: 248px;
-  }
 }
 
 .capabilities__description {
   margin: 12px 0 31px 0;
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .capabilities {
+    padding-bottom: 1px;
+    padding-top: 58px;
+    text-align: left;
+
+    &::after {
+      height: 547px;
+      width: 268px;
+      left: 0;
+      background-image: url("../img/iphone-hello-tablet.png");
+      transform: translate(7%, 24px);
+    }
+  }
+
+  .capabilities__list {
+    width: 50%;
+    margin-left: auto;
+    padding-bottom: 7px;
+  }
+
+  .capabilities__description {
     margin-top: 0;
     margin-bottom: 34px;
   }
+}
 
-  @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .capabilities {
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-top: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .capabilities__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: auto;
+    text-align: center;
+  }
+
+  .capabilities__item {
+    padding-top: 310px;
+    max-width: 300px;
+    background-repeat: no-repeat;
+    z-index: 1;
+
+    &:nth-child(1){
+      background-image: url("../img/capability-1.png");
+    }
+
+    &:nth-child(2){
+      background-image: url("../img/capability-2.png");
+    }
+    &:nth-child(3){
+      background-image: url("../img/capability-3.png");
+    }
+  }
+
+  .capabilities__name {
+    margin: 50px 30px 20px 30px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .capabilities__description {
+    margin: 10px 28px 10px 28px;
     font-size: 18px;
     line-height: 30px;
-    max-width: 248px;
   }
 }
