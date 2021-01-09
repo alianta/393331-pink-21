@@ -33,7 +33,9 @@
   }
 
   &:hover::before,
-  &:hover::after {
+  &:hover::after,
+  &:focus::before,
+  &:focus::after{
     background-color: $color-blue-1;
   }
 
@@ -110,6 +112,15 @@
   text-decoration: none;
   display: block;
   min-width: 150px;
+
+  &:hover,
+  &:focus {
+    color: $color-red-1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -138,6 +149,7 @@
     text-transform: none;
     font-weight: normal;
     background-color: transparent;
+    box-shadow: none;
   }
 
   .main-nav__item {
@@ -149,5 +161,24 @@
 
   .main-nav__link {
     min-width: auto;
+
+    &:active {
+      color: $color-white-1;
+      opacity: 0.3;
+    }
+
+    &--current {
+      border-bottom: 2px solid $color-white-1;
+
+      &:hover,
+      &:focus {
+        border-bottom-color: $color-red-1;
+      }
+
+      &:active {
+        border-bottom-color: $color-white-1;
+        opacity: 0.3;
+      }
+    }
   }
 }

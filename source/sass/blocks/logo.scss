@@ -1,11 +1,21 @@
 .logo {
   height: 23px;
   margin-left: 20px;
+
+  &:hover .logo__image,
+  &:focus .logo__image{
+    fill: $color-red-1;
+  }
+
+  &:active .logo__image{
+    fill: $color-white-opacity-30;
+  }
 }
 
 .logo__image {
   width: 74px;
   height: 23px;
+  fill: $color-white-1;
 
   &--tablet {
     display: none;
