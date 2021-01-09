@@ -91,14 +91,15 @@
     background-repeat: no-repeat;
     z-index: 1;
 
-    &:nth-child(1){
+    &:nth-child(1) {
       background-image: url("../img/capability-1.png");
     }
 
-    &:nth-child(2){
+    &:nth-child(2) {
       background-image: url("../img/capability-2.png");
     }
-    &:nth-child(3){
+
+    &:nth-child(3) {
       background-image: url("../img/capability-3.png");
     }
   }

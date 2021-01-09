@@ -3,11 +3,11 @@
   margin-left: 20px;
 
   &:hover .logo__image,
-  &:focus .logo__image{
+  &:focus .logo__image {
     fill: $color-red-1;
   }
 
-  &:active .logo__image{
+  &:active .logo__image {
     fill: $color-white-opacity-30;
   }
 }
