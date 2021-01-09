@@ -3,16 +3,6 @@
   background-color: $color-blue-2;
   color: $color-white-1;
   text-align: center;
-
-  @media (min-width: $tablet-width) {
-    max-width: 300px;
-    background: none;
-    z-index: 1;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 130px;
-  }
 }
 
 .app__platform-list {
@@ -20,10 +10,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 32px 38px 19px 38px;
-
-  @media (min-width: $tablet-width) {
-    padding: 46px 50px 33px 46px;
-  }
 }
 
 .app__platform-item {
@@ -52,8 +38,31 @@
 .app__platform-information {
   font-weight: 300;
   margin: 0;
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .app{
+    max-width: 300px;
+    background: none;
+    z-index: 1;
+  }
+
+  .app__platform-list {
+    padding: 46px 50px 33px 46px;
+  }
+
+  .app__platform-information {
     font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .app {
+    padding: 0;
+  }
+
+  .app__platform-list {
+    padding-top: 67px;
+    padding-bottom: 53px;
   }
 }
