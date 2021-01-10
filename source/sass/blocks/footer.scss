@@ -4,13 +4,17 @@
   justify-content: space-between;
   align-items: center;
   padding: 34px 20px;
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .footer {
     flex-direction: row;
     flex-wrap: wrap;
   }
+}
 
-  @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .footer {
     padding-left: 130px;
     padding-right: 130px;
   }

@@ -3,13 +3,17 @@
   flex-direction: column;
   flex-wrap: wrap;
   padding: 0 20px;
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .catalog {
     flex-direction: row;
     justify-content: space-between;
   }
+}
 
-  @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .catalog {
     padding: 0 130px;
   }
 }
