@@ -14,3 +14,10 @@
     background-image: url("../img/map-tablet.png");
   }
 }
+
+@media (min-width: $desktop-width) {
+  .map {
+    min-height: 502px;
+    background-image: url("../img/map-desktop.png");
+  }
+}
