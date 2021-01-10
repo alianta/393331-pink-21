@@ -1,7 +1,7 @@
 .social {
   display: flex;
   flex-wrap: wrap;
-  padding: 31px 0 16px 0;
+  padding: 38px 0 16px 0;
 }
 
 .social__link {
@@ -17,5 +17,18 @@
 
   &:first-child {
     margin-left: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    padding-top: 13px;
+    padding-right: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    padding-right: 0;
   }
 }

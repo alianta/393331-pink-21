@@ -1,25 +1,35 @@
 .logo {
-  height: 23px;
-  margin-left: 20px;
+  height: 40px;
+  width: 145px;
 
   &:hover .logo__image,
   &:focus .logo__image {
     fill: $color-red-1;
+    color: $color-red-1;
   }
 
   &:active .logo__image {
     fill: $color-white-opacity-30;
+    color: $color-white-opacity-30;
   }
 }
 
-.logo__image {
-  width: 74px;
-  height: 23px;
-  fill: $color-white-1;
+.logo__images {
+  height: 40px;
+  width: 145px;
+}
 
-  &--tablet {
-    display: none;
-  }
+.logo__pic {
+  fill: inherit;
+}
+
+.logo__text {
+  fill: currentColor;
+}
+
+.logo__image {
+  fill: $color-white-1;
+  color: $color-white-1;
 
   &--desktop {
     display: none;
@@ -29,21 +39,12 @@
 
 @media (min-width: $tablet-width) {
   .logo {
-    height: 40px;
     margin-bottom: 16px;
   }
 
   .logo__image {
     width: 145px;
     height: 40px;
-
-    &--mobile {
-      display: none;
-    }
-
-    &--tablet {
-      display: block;
-    }
   }
 }
 
@@ -53,9 +54,7 @@
   }
 
   .logo__image {
-    width: 147px;
-
-    &--tablet {
+    &--mobile-and-tablet {
       display: none;
     }
 

@@ -3,18 +3,31 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 34px 20px;
+  padding: 40px 20px;
+}
+
+.footer__logo-images use {
+  fill: $color-red-1;
+  color: $color-blue-1;
 }
 
 @media (min-width: $tablet-width) {
   .footer {
+    padding-top: 21px;
+    padding-bottom: 24px;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .footer__logo {
+    padding-top: 13px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .footer {
+    padding-top: 54px;
     padding-left: 130px;
     padding-right: 130px;
   }

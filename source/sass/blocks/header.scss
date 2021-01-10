@@ -7,6 +7,23 @@
   background-color: $color-blue-1;
 }
 
+.header__logo-wrapper {
+  margin-left: 20px;
+  height: 23px;
+}
+
+.header__logo {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.header__logo-images {
+  position: absolute;
+  left: -71px;
+  top: -17px;
+}
+
 .header--nav-closed {
   background-color: $color-black-opacity-30;
 }
@@ -15,6 +32,11 @@
   .header {
     min-height: 110px;
     padding-top: 28px;
+  }
+
+  .header__logo,
+  .header__logo-images {
+    position: static;
   }
 }
 
@@ -25,5 +47,9 @@
     padding-right: 130px;
     display: flex;
     justify-content: space-between;
+  }
+
+  .header__logo-wrapper {
+    margin-left: 0;
   }
 }

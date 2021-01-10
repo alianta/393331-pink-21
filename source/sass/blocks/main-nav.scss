@@ -8,7 +8,7 @@
   width: 28px;
   height: 24px;
   margin-right: 20px;
-  margin-top: -32px;
+  margin-top: -25px;
   margin-left: auto;
   border: none;
   background-color: transparent;
@@ -124,6 +124,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    margin-top: -8px;
+  }
+
   .main-nav__list {
     margin-top: 43px;
   }
