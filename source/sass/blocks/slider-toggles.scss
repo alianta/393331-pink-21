@@ -11,7 +11,7 @@
   width: 6px;
   height: 6px;
   margin-left: 17px;
-  background-color: gray;
+  background-color: $color-blue-opacity-30;
   border-radius: 50%;
   cursor: pointer;
 
@@ -22,5 +22,11 @@
   &--current {
     background: $color-white-1;
     border: 3px solid $color-blue-1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider-toggles {
+    display: none;
   }
 }

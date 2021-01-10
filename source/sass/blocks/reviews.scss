@@ -63,7 +63,7 @@
 
   .reviews__text {
     font-size: 18px;
-    margin-bottom: 35px;
+    margin-bottom: 36px;
   }
 
   .reviews__author-info {
@@ -75,8 +75,14 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: $desktop-padding-horizontally;
+    padding-right: $desktop-padding-horizontally;
+    padding-top: 166px;
+    padding-bottom: 5px;
+    background-image: url("../img/quotes.svg");
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 72px;
 
     &::after {
       bottom: -92px;
@@ -105,7 +111,7 @@
     width: 22px;
     height: 41px;
     background-image: url("../img/left-arrow.svg");
-    top: 50%;
+    top: 30%;
     transform: translateY(-50%);
   }
 
