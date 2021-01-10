@@ -48,22 +48,26 @@
 
 @media (min-width: $desktop-width) {
   .research {
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-top: 116px;
+    padding-bottom: 112px;
+    padding-left: $desktop-padding-horizontally;
+    padding-right: $desktop-padding-horizontally;
     background-color: $color-gray-1;
     background-position-x: 130px;
+    background-position-y: 44%;
     background-size: 298px;
   }
 
   .research__promo,
   .research__text,
   .research__link {
-    margin-right: 130px;
-    margin-left: 42%;
+    margin-left: 39%;
     line-height: 30px;
   }
 
   .research__text {
+    margin-top: 25px;
+    margin-bottom: 30px;
     font-size: 18px;
   }
 
