@@ -4,19 +4,32 @@
   padding-bottom: 46px;
   overflow: hidden;
   max-width: 100vw;
+}
 
-  @media (min-width: $tablet-width) {
-    padding: 96px 20px 30px 20px;
+@media (min-width: $tablet-width) {
+  .tariffs {
+    padding-left: $tablet-padding-horizontally;
+    padding-right: $tablet-padding-horizontally;
+    padding-top: 96px;
+    padding-bottom: 30px;
   }
 
-  @media (min-width: $desktop-width) {
-    padding-left: 130px;
-    padding-right: 130px;
-  }
-
-  .slider-toggles {
-    @media (min-width: $tablet-width) {
+  .tariffs-table__option-availability{
+    .tariffs-table__option-name:first-child{
       display: none;
     }
+  }
+
+  .tariffs__slider-toggles{
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tariffs {
+    padding-left: $desktop-padding-horizontally;
+    padding-right: $desktop-padding-horizontally;
+    padding-top: 150px;
+    padding-bottom: 5px;
   }
 }
