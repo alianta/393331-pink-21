@@ -29,6 +29,10 @@
       transform: translateX(-50%);
     }
   }
+
+  &--catalog {
+    min-height: 238px;
+  }
 }
 
 .intro__slogan {
@@ -55,6 +59,14 @@
   line-height: 30px;
 }
 
+.intro__name {
+  margin-top: 92px;
+  padding: 0 20px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 33px;
+}
+
 @media (min-width: $tablet-width) {
   .intro {
     background-image: url("../img/intro-back-tablet.jpg");
@@ -71,6 +83,10 @@
         top: auto;
       }
     }
+
+    &--catalog {
+      min-height: 438px;
+    }
   }
 
   .intro__slogan {
@@ -79,6 +95,11 @@
     line-height: 48px;
     margin-bottom: 0;
     margin-top: 122px;
+  }
+
+  .intro__name {
+    font-size: 50px;
+    line-height: 68px;
   }
 }
 
@@ -98,6 +119,12 @@
         left: 56%;
       }
     }
+
+    &--catalog {
+      padding-top: 140px;
+      padding-bottom: 50px;
+      min-height: 393px;
+    }
   }
 
   .intro__slogan {
@@ -105,5 +132,10 @@
     margin: 0;
     font-size: 50px;
     line-height: 68px;
+  }
+
+  .intro__name {
+    margin: 28px auto auto auto;
+    max-width: min-content;
   }
 }
