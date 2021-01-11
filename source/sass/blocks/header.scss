@@ -16,6 +16,8 @@
   position: relative;
   display: block;
   overflow: hidden;
+  width: 74px;
+  height: 23px;
 }
 
 .header__logo-images {
@@ -37,6 +39,11 @@
   .header__logo,
   .header__logo-images {
     position: static;
+  }
+
+  .header__logo {
+    width: 147px;
+    height: 40px;
   }
 }
 

@@ -6,6 +6,14 @@
   padding: 40px 20px;
 }
 
+.footer__logo {
+  &:active .logo__image {
+    fill: $color-red-1;
+    color: $color-blue-1;
+    opacity: 0.3;
+  }
+}
+
 .footer__logo-images use {
   fill: $color-red-1;
   color: $color-blue-1;
@@ -27,8 +35,9 @@
 
 @media (min-width: $desktop-width) {
   .footer {
-    padding-top: 54px;
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-top: 57px;
+    padding-left: $desktop-padding-horizontally;
+    padding-right: $desktop-padding-horizontally;
+    padding-bottom: 59px;
   }
 }

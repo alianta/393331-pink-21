@@ -15,6 +15,15 @@
   border-radius: 50%;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    background-color: $color-blue-opacity-60;
+  }
+
+  &:active {
+    background-color: $color-blue-opacity-10;
+  }
+
   &:first-child {
     margin-left: 0;
   }

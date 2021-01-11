@@ -15,9 +15,39 @@
   border: 3px solid $color-blue-opacity-10;
   border-radius: 50%;
 
+  &:hover,
+  &:focus {
+    border-color: $color-blue-1;
+  }
+
+  &:active {
+    .social__link-image {
+      fill: $color-red-opacity-30;
+    }
+  }
+
   &:first-child {
     margin-left: 0;
   }
+
+  &--twitter {
+    width: 18px;
+    height: 14px;
+  }
+
+  &--facebook {
+    width: 9px;
+    height: 18px;
+  }
+
+  &--youtube {
+    width: 15px;
+    height: 13px;
+  }
+}
+
+.social__link-image {
+  fill: $color-red-1;
 }
 
 @media (min-width: $tablet-width) {
@@ -30,5 +60,10 @@
 @media (min-width: $desktop-width) {
   .social {
     padding-right: 0;
+    padding-left: 9px;
+  }
+
+  .social__link {
+    margin-left: 6px;
   }
 }
