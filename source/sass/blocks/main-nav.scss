@@ -74,6 +74,10 @@
       display: none;
     }
   }
+
+  &--no-js {
+    display: none;
+  }
 }
 
 .main-nav__list {

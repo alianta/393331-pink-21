@@ -5,6 +5,7 @@ var navToggle = document.querySelector('.main-nav__toggle');
 
 navMain.classList.add('main-nav__list--closed');
 heder.classList.add('header--nav-closed');
+navToggle.classList.remove('main-nav__toggle--no-js');
 navToggle.classList.add('main-nav__toggle--closed');
 
 navToggle.addEventListener('click', function() {
