@@ -20,9 +20,12 @@ $color-gray-1: #f2f2f2;
 $color-gray-2: #e5e5e5;
 $color-full-opacity: rgba(0, 0, 0, 0);
 // Viewports
+$mobile-width-only: 659px;
 $tablet-width: 660px;
 $desktop-width: 1200px;
-$mobile-width-only: 659px;
 //padding
+$mobile-padding-horizontally: 20px;
 $tablet-padding-horizontally: 20px;
 $desktop-padding-horizontally: 130px;
+//retina
+$retina-resolution: 2dppx;

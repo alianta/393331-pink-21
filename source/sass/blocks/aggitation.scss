@@ -1,6 +1,10 @@
 .aggitation {
-  padding: 0 20px;
+  padding: 23px $mobile-padding-horizontally;
   text-align: center;
   line-height: 30px;
   color: $color-blue-1;
+}
+
+.aggitation__text {
+  margin: 0;
 }
