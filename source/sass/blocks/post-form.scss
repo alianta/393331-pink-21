@@ -44,6 +44,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 57px;
+    padding-bottom: 54px;
   }
 
   .post-form__image-block {
@@ -55,11 +57,18 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
-    width: 48%;
+    align-content: flex-start;
+    width: 42%;
+    margin-right: 14px;
   }
 
   .post-form__filter {
     margin: inherit;
+    display: block;
+    width: 77%;
+    margin-right: 5px;
+    margin-top: 18px;
+    margin-bottom: 52px
   }
 }
 
