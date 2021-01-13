@@ -12,7 +12,7 @@
     background-color: transparent;
 
     &::before {
-      content: 'панорама дня';
+      content: "панорама дня";
       position: absolute;
       box-sizing: border-box;
       height: 36px;
@@ -27,6 +27,7 @@
       text-align: center;
       text-transform: uppercase;
     }
+
     .post__data {
       margin-right: $mobile-padding-horizontally;
       margin-left: $mobile-padding-horizontally;
@@ -61,7 +62,7 @@
   color: $color-red-1;
   background-image: url("../img/heart.svg");
   background-repeat: no-repeat;
-  background-position-y: 16px;;
+  background-position-y: 16px;
 }
 
 .post__foto {
@@ -75,16 +76,19 @@
   .post {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 48%;
+    min-height: 460px;
     margin-bottom: 16px;
 
-   &--panorama-of-day {
+    &--panorama-of-day {
       width: 100vw;
       margin-bottom: 44px;
 
-      &::before{
-        top :57px;
+      &::before {
+        top: 57px;
       }
+
       .post__data {
         position: relative;
       }
@@ -101,14 +105,46 @@
 
   .post__data {
     padding: 24px 30px 30px 30px;
-    flex-basis: 100%;
+    flex-grow: 1;
   }
 
-
+  .post__liking {
+    padding-right: 32px;
+    padding-left: 0;
+    background-position-x: right;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .post {
     width: 32%;
+    margin-bottom: 46px;
+    min-height: 560px;
+
+    &--panorama-of-day {
+      width: 100vw;
+      margin-bottom: 44px;
+      margin-left: -$desktop-padding-horizontally;
+      margin-right: -$desktop-padding-horizontally;
+
+      &::before {
+        top: 55px;
+        right: 129px;
+      }
+
+      .post__data {
+        position: relative;
+        margin-left: $desktop-padding-horizontally;
+        margin-right: $desktop-padding-horizontally;
+      }
+
+      .post__liking {
+        position: absolute;
+        padding-right: 29px;
+        right: 30px;
+        top: 14px;
+        background-position-x: right;
+      }
+    }
   }
 }
