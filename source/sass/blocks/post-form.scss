@@ -75,12 +75,14 @@
 @media (min-width: $desktop-width) {
   .post-form {
     justify-content: space-around;
-    padding-left: 130px;
-    padding-right: 130px;
+    margin-left: 130px;
+    margin-right: 130px;
+    padding-left: 38px;
+    padding-right: 58px;
   }
 
   .post-form__image-block {
-    width: 32%;
+    width: 35%;
   }
 
   .post-form__filter-block {
