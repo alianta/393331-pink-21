@@ -232,18 +232,18 @@
       </div>
       <form class="post-form" id="post-form"  action="https://echo.htmlacademy.ru/" method="get">
         <div class="post-form__image-block">
-          <label class="post-form__file-label visually-hidden" for="foto">
+          <label class="post-form__file-label" for="foto">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/posts-foto/post-8-desktop.jpg 1x, img/posts-foto/post-8-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/posts-foto/post-8-tablet.jpg 1x, img/posts-foto/post-8-tablet@2x.jpg 2x">
               <img class="post__foto" src="img/posts-foto/post-8.jpg" srcset="img/posts-foto/post-8@2x.jpg 2x" width="280" height="180" alt="">
             </picture>
           </label>
-        <input class="post-form__file" type="file" id="foto" name="foto">
+        <input class="post-form__file  visually-hidden" type="file" id="foto" name="foto">
         </div>
         <div class="post-form__filter-block">
           <label class="post-form__label visually-hidden" for="cut">Обрезать изображение</label>
-          <input class="post-form__filter" type="range" id="cut" name="cut" min="0" max="100" step="1" value="50">
+          <input class="post-form__filter post-form__filter--active" type="range" id="cut" name="cut" min="0" max="100" step="1" value="50">
           <label class="post-form__label visually-hidden" for="fill">Перекрасить изображение</label>
           <input class="post-form__filter" type="range" id="fill" name="fill" min="0" max="100" step="1" value="50">
           <label class="post-form__label visually-hidden" for="contrast">Изменить контраст изображения</label>

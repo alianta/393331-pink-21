@@ -2,6 +2,7 @@
   border: 3px solid $color-white-1;
   border-radius: 29px;
   padding: 16px;
+  font-family: inherit;
   text-align: center;
   text-decoration: none;
   display: block;
@@ -35,16 +36,48 @@
   }
 
   &--form-send {
-    border-color: $color-red-1;
-    color: $color-red-1;
     width: 100%;
     margin-right: auto;
+    margin-top: 72px;
+    margin-bottom: 10px;
+    border-color: $color-red-1;
+    color: $color-red-1;
+    box-shadow: none;
+
+    &:hover,
+    &:focus {
+      color: $color-white-1;
+      background: $color-red-1;
+      box-shadow: inherit;
+    }
+
+    &:active {
+      color: $color-white-opacity-30;
+      box-shadow: inherit;
+    }
   }
 
   &--form-cancel {
     border-color: $color-blue-opacity-10;
     color: $color-blue-opacity-10;
     width: 100%;
+    box-shadow: none;
+
+    &:hover,
+    &:focus {
+      color: $color-blue-opacity-30;
+      border-color: $color-blue-opacity-30;
+      background-color: transparent;
+      box-shadow: inherit;
+    }
+
+    &:active {
+      color: $color-white-opacity-30;
+      background-color: $color-blue-1;
+      border-color: $color-blue-1;
+      opacity: 0.3;
+      box-shadow: inherit;
+    }
   }
 }
 

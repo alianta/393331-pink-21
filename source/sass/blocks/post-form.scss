@@ -1,14 +1,42 @@
 .post-form {
-  padding: 20px 20px 40px 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: $mobile-padding-horizontally;
+  padding-right: $mobile-padding-horizontally;
   background-color: $color-gray-1;
   display: flex;
   flex-direction: column;
 }
 
 .post-form__filter {
+  display: none;
   width: 86%;
-  display: block;
-  margin: 0 auto;
+  height: 2px;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 125px;
+  margin-bottom: 34px;
+  appearance: none;
+  background-color: $color-blue-1;
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    background-color: $color-white-1;
+    border: 2px solid $color-red-1;
+    border-radius: 14px;
+  }
+
+  &:focus {
+    &::-webkit-slider-thumb {
+      background-color: $color-red-1;
+    }
+  }
+
+  &--active {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
