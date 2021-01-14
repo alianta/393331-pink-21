@@ -1,0 +1,19 @@
+.wrapper {
+  max-width: $mobile-width;
+  padding-left: $mobile-padding-horizontally;
+  padding-right: $mobile-padding-horizontally;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .wrapper {
+    max-width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    max-width: $desktop-width;
+  }
+}

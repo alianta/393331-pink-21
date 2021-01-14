@@ -1,16 +1,14 @@
 .post-form {
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 40px;
-  padding-left: $mobile-padding-horizontally;
-  padding-right: $mobile-padding-horizontally;
   background-color: $color-gray-1;
   display: flex;
   flex-direction: column;
 }
 
 .post-form__filter {
-  display: none;
-  width: 86%;
+  display: block;
+  width: 75%;
   height: 2px;
   margin-left: auto;
   margin-right: auto;
@@ -33,10 +31,72 @@
       background-color: $color-red-1;
     }
   }
+}
+
+.post-form__filter-item {
+  position: relative;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  .post-form__filter {
+    display: none;
+  }
 
   &--active {
-    display: block;
+    margin-top: 0;
+    border-bottom: 1px solid $color-blue-opacity-10;
+
+    .post-form__filter {
+      display: block;
+    }
   }
+
+  &--crop {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 44px;
+      height: 44px;
+      background-image: url("../img/crop.svg");
+      background-repeat: no-repeat;
+      left: 57px;
+      top: -83px;
+    }
+  }
+
+  &--fill {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 48px;
+      height: 43px;
+      background-image: url("../img/fill.svg");
+      background-repeat: no-repeat;
+      left: 136px;
+      top: -119px;
+    }
+  }
+
+  &--contrast {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      background-image: url("../img/contrast.svg");
+      background-repeat: no-repeat;
+      left: 220px;
+      top: -114px;
+    }
+  }
+}
+
+.post-form__foto {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -74,15 +134,15 @@
 
 @media (min-width: $desktop-width) {
   .post-form {
-    justify-content: space-around;
+    justify-content: space-between;
     margin-left: 130px;
     margin-right: 130px;
-    padding-left: 38px;
+    padding-left: 80px;
     padding-right: 58px;
   }
 
   .post-form__image-block {
-    width: 35%;
+    width: 37%;
   }
 
   .post-form__filter-block {
@@ -92,5 +152,11 @@
   .post-form__filter {
     width: 70%;
     float: right;
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+    &:first-of-type {
+      margin-top: 18px;
+    }
   }
 }
