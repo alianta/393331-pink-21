@@ -6,13 +6,86 @@
   flex-direction: column;
 }
 
+.post-form__filter-item {
+  position: relative;
+  height: 38px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-top: 123px;
+
+  .post-form__filter {
+    display: none;
+  }
+
+  &--active {
+    margin-top: 0;
+    border-bottom: 1px solid $color-blue-opacity-10;
+
+    .post-form__filter {
+      display: block;
+    }
+
+    .post-form__action-btn-icon {
+      fill: $color-red-1;
+    }
+  }
+
+  &:not(:first-child) {
+    margin-top: -161px;
+  }
+
+  &--fill {
+    .post-form__action-btn {
+      width: 40px;
+      height: 43px;
+      left: 136px;
+    }
+  }
+
+  &--contrast {
+    .post-form__action-btn {
+      width: 32px;
+      height: 32px;
+      left: 220px;
+      top: 48px;
+    }
+  }
+}
+
+.post-form__action-btn {
+  position: absolute;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  left: 57px;
+  top: 42px;
+  border: none;
+  background-color: transparent;
+
+  &-icon{
+    fill: $color-blue-opacity-30;
+  }
+
+  &:hover,
+  &:focus {
+    .post-form__action-btn-icon {
+      fill: $color-blue-opacity-50;
+    }
+  }
+
+  &:active {
+    .post-form__action-btn-icon {
+      fill: $color-red-1;
+    }
+  }
+}
+
 .post-form__filter {
   display: block;
   width: 75%;
   height: 2px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 125px;
   margin-bottom: 34px;
   appearance: none;
   background-color: $color-blue-1;
@@ -29,65 +102,6 @@
   &:focus {
     &::-webkit-slider-thumb {
       background-color: $color-red-1;
-    }
-  }
-}
-
-.post-form__filter-item {
-  position: relative;
-  margin-left: -20px;
-  margin-right: -20px;
-
-  .post-form__filter {
-    display: none;
-  }
-
-  &--active {
-    margin-top: 0;
-    border-bottom: 1px solid $color-blue-opacity-10;
-
-    .post-form__filter {
-      display: block;
-    }
-  }
-
-  &--crop {
-    &::before {
-      content: "";
-      position: absolute;
-      width: 44px;
-      height: 44px;
-      background-image: url("../img/crop.svg");
-      background-repeat: no-repeat;
-      left: 57px;
-      top: -83px;
-    }
-  }
-
-  &--fill {
-    &::before {
-      content: "";
-      position: absolute;
-      width: 48px;
-      height: 43px;
-      background-image: url("../img/fill.svg");
-      background-repeat: no-repeat;
-      left: 136px;
-      top: -119px;
-    }
-  }
-
-  &--contrast {
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 32px;
-      height: 32px;
-      background-image: url("../img/contrast.svg");
-      background-repeat: no-repeat;
-      left: 220px;
-      top: -114px;
     }
   }
 }
