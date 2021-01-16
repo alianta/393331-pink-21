@@ -30,8 +30,9 @@
     }
   }
 
-  &--catalog {
-    min-height: 238px;
+  &--catalog,
+  &--form {
+    min-height: 236px;
   }
 }
 
@@ -43,13 +44,18 @@
   line-height: 29px;
 }
 
-.intro__header {
+.intro__header,
+.intro__competition-header {
   margin-top: 92px;
   margin-bottom: 50px;
   padding: 0 20px;
   font-size: 24px;
   font-weight: 300;
   line-height: 33px;
+}
+
+.intro__competition-header {
+  margin-bottom: 45px;
 }
 
 .intro__text {
@@ -108,7 +114,7 @@
     justify-content: space-between;
     box-sizing: border-box;
     padding: 207px 130px 124px 130px;
-    min-height: 852px;
+    min-height: 235px;
     background-image: url("../img/intro-back-desktop.jpg");
 
     &--phone {
