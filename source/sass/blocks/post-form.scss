@@ -1,7 +1,6 @@
 .post-form {
   padding-top: 20px;
   padding-bottom: 40px;
-  background-color: $color-gray-1;
   display: flex;
   flex-direction: column;
 }
@@ -122,27 +121,76 @@
     padding-bottom: 54px;
   }
 
-  .post-form__image-block {
-    width: 48%;
-  }
-
   .post-form__filter-block {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-content: flex-start;
-    width: 42%;
-    margin-right: 14px;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 46%;
+    padding-left: 12px;
   }
 
-  .post-form__filter {
-    margin: inherit;
-    display: block;
-    width: 77%;
-    margin-right: 5px;
-    margin-top: 18px;
-    margin-bottom: 52px;
+  .post-form__filter-item {
+    height: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 16px;
+    padding-bottom: 38px;
+    padding-right: 18px;
+    border-bottom: 1px solid $color-blue-opacity-10;
+
+    &--crop,
+    &--fill,
+    &--contrast {
+      .post-form__action-btn {
+        left: 2px;
+        top: 8px;
+      }
+    }
+    .post-form__filter {
+      display: block;
+      width: 79%;
+      margin-right: 0;
+    }
+
+    &:not(:first-child) {
+      padding-top: 33px;
+      margin-top: 0;
+    }
+
+    &--fill {
+      .post-form__action-btn {
+        width: 24px;
+        height: 22px;
+        top: 27px;
+      }
+    }
+
+    &--contrast {
+      .post-form__action-btn {
+        width: 16px;
+        height: 16px;
+        top: 27px;
+        left: 5px;
+      }
+
+      .post-form__action-btn-icon {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  .post-form__action-btn {
+    width: 22px;
+    height: 22px;
+    left: 0;
+    top: 0;
+  }
+
+  .post-form__action-btn-icon{
+    width: 22px;
+    height: 22px;
   }
 }
 
@@ -153,10 +201,6 @@
     margin-right: 130px;
     padding-left: 80px;
     padding-right: 58px;
-  }
-
-  .post-form__image-block {
-    width: 37%;
   }
 
   .post-form__filter-block {

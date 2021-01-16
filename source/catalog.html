@@ -241,48 +241,50 @@
       <div class="aggitation">
         <p class="aggitation__text">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
       </div>
-      <form class="post-form" id="post-form"  action="https://echo.htmlacademy.ru/" method="get">
-        <div class="wrapper">
-          <div class="post-form__image-block">
-            <label class="post-form__file-label" for="foto">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/posts-foto/post-8-desktop.jpg 1x, img/posts-foto/post-8-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/posts-foto/post-8-tablet.jpg 1x, img/posts-foto/post-8-tablet@2x.jpg 2x">
-                <img class="post-form__foto" src="img/posts-foto/post-8.jpg" srcset="img/posts-foto/post-8@2x.jpg 2x" width="280" height="180" alt="">
-              </picture>
-            </label>
-          <input class="post-form__file  visually-hidden" type="file" id="foto" name="foto">
-          </div>
-          <div class="post-form__filter-block">
-            <div class="post-form__filter-item post-form__filter-item--crop post-form__filter-item--active">
-              <button class="post-form__action-btn" type="button" aria-label="Обрезать изображение">
-                <svg class="post-form__action-btn-icon" width="44" height="44">
-                  <use xlink:href="#crop-icon"></use>
-                </svg>
-              </button>
-              <input class="post-form__filter post-form__filter" type="range" id="crop" name="crop" min="0" max="100" step="1" value="85">
+      <div class="create-post">
+        <div class="wrapper wrapper--second-type">
+          <form class="post-form" id="post-form"  action="https://echo.htmlacademy.ru/" method="get">
+            <div class="post-form__image-block">
+              <label class="post-form__file-label" for="foto">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/posts-foto/post-8-desktop.jpg 1x, img/posts-foto/post-8-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/posts-foto/post-8-tablet.jpg 1x, img/posts-foto/post-8-tablet@2x.jpg 2x">
+                  <img class="post-form__foto" src="img/posts-foto/post-8.jpg" srcset="img/posts-foto/post-8@2x.jpg 2x" width="280" height="180" alt="">
+                </picture>
+              </label>
+            <input class="post-form__file  visually-hidden" type="file" id="foto" name="foto">
             </div>
-            <div class="post-form__filter-item post-form__filter-item--fill">
-              <button class="post-form__action-btn" type="button" aria-label="Перекрасить изображение">
-                <svg class="post-form__action-btn-icon" width="48" height="43">
-                  <use xlink:href="#fill-icon"></use>
-                </svg>
-              </button>
-              <input class="post-form__filter" type="range" id="fill" name="fill" min="0" max="100" step="1" value="13">
+            <div class="post-form__filter-block">
+              <div class="post-form__filter-item post-form__filter-item--crop post-form__filter-item--active">
+                <button class="post-form__action-btn" type="button" aria-label="Обрезать изображение">
+                  <svg class="post-form__action-btn-icon" width="44" height="44" viewBox="0 0 44 44">
+                    <use xlink:href="#crop-icon"></use>
+                  </svg>
+                </button>
+                <input class="post-form__filter post-form__filter" type="range" id="crop" name="crop" min="0" max="100" step="1" value="85">
+              </div>
+              <div class="post-form__filter-item post-form__filter-item--fill">
+                <button class="post-form__action-btn" type="button" aria-label="Перекрасить изображение">
+                  <svg class="post-form__action-btn-icon" width="48" height="43" viewBox="0 0 48 43">
+                    <use xlink:href="#fill-icon"></use>
+                  </svg>
+                </button>
+                <input class="post-form__filter" type="range" id="fill" name="fill" min="0" max="100" step="1" value="13">
+              </div>
+              <div class="post-form__filter-item post-form__filter-item--contrast">
+                <button class="post-form__action-btn" type="button" aria-label="Изменить контраст изображения">
+                  <svg class="post-form__action-btn-icon" width="32" height="32" viewBox="0 0 32 32">
+                    <use xlink:href="#contrast-icon"></use>
+                  </svg>
+                </button>
+                <input class="post-form__filter" type="range" id="contrast" name="contrast" min="0" max="100" step="1" value="52">
+              </div>
+              <button class="button button--first-type button--form-send" type="submit">Запостить</button>
+              <button class="button button--first-type button--form-cancel" type="reset">Отмена</button>
             </div>
-            <div class="post-form__filter-item post-form__filter-item--contrast">
-              <button class="post-form__action-btn" type="button" aria-label="Изменить контраст изображения">
-                <svg class="post-form__action-btn-icon" width="32" height="32">
-                  <use xlink:href="#contrast-icon"></use>
-                </svg>
-              </button>
-              <input class="post-form__filter" type="range" id="contrast" name="contrast" min="0" max="100" step="1" value="52">
-            </div>
-            <button class="button button--first-type button--form-send" type="submit">Запостить</button>
-            <button class="button button--first-type button--form-cancel" type="reset">Отмена</button>
-          </div>
+          </form>
         </div>
-      </form>
+      </div>
     </main>
     <footer class="footer">
       <a class="logo footer__logo" href="#" aria-label="Pink">
