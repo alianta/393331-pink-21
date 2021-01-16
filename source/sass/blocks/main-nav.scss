@@ -1,61 +1,114 @@
 .main-nav {
   width: 100%;
-
-  &--closed {
-    display: none;
-  }
-
-  &--opend {
-    display: block;
-    background-color: $color-blue-1;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: block;
-    background-color: $color-full-opacity;
-  }
 }
 
 .main-nav__toggle {
-  @media (min-width: $desktop-width) {
+  position: relative;
+  display: inherit;
+  width: 28px;
+  height: 24px;
+  margin-right: 20px;
+  margin-top: -25px;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 29px;
+    height: 3px;
+    background-color: $color-white-1;
+  }
+
+  &::before {
+    box-shadow: none;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after,
+  &:focus::before,
+  &:focus::after {
+    background-color: $color-blue-1;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: $color-blue-opacity-30;
+  }
+
+  &--closed {
+    width: 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50px;
+      height: 4px;
+      background-color: $color-white-1;
+      box-shadow: 0 10px 0 0 $color-white-1, 0 20px 0 0 $color-white-1;
+      transform: none;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      background-color: $color-red-1;
+      box-shadow: 0 10px 0 0 $color-red-1, 0 20px 0 0 $color-red-1;
+    }
+
+    &:active::before {
+      background-color: $color-red-opacity-30;
+      box-shadow: 0 10px 0 0 $color-red-opacity-30, 0 20px 0 0 $color-red-opacity-30;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &--no-js {
     display: none;
   }
 }
 
-.main-nav--nojs .main-nav__toggle {
-  display: none;
-}
-
 .main-nav__list {
-  list-style: none;
-  font-weight: bold;
-  line-height: 32px;
-  font-size: 18px;
-  align-items: center;
-  text-transform: uppercase;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   padding: 0;
-  margin: 0;
+  margin-bottom: 0;
+  margin-top: 24px;
+  list-style: none;
+  font-weight: bold;
+  line-height: 32px;
+  font-size: 18px;
+  box-shadow: 0 -1px 0 $color-black-opacity-30;
+  text-transform: uppercase;
 
-  @media (min-width: $desktop-width) {
-    flex-direction: row;
+  &--closed {
+    display: none;
+    background-color: $color-blue-1;
   }
 }
 
 .main-nav__item {
-  min-height: 63px;
-  padding: 25px 20px;
   box-sizing: border-box;
   width: 100%;
+  min-height: 63px;
+  padding: 16px 20px;
   text-align: center;
   box-shadow: 0 1px 0 $color-black-1, inset 0 1px 0 $color-white-opacity-15;
-
-  @media (min-width: $desktop-width) {
-    width: min-content;
-  }
 }
 
 .main-nav__link {
@@ -63,4 +116,77 @@
   text-decoration: none;
   display: block;
   min-width: 150px;
+
+  &:hover,
+  &:focus {
+    color: $color-red-1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    margin-top: -8px;
+  }
+
+  .main-nav__list {
+    margin-top: 43px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    display: block;
+    max-width: 620px;
+    padding-top: 8px;
+    background-color: $color-full-opacity;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    text-transform: none;
+    font-weight: normal;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .main-nav__item {
+    width: min-content;
+    min-height: auto;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .main-nav__link {
+    min-width: auto;
+
+    &:active {
+      color: $color-white-1;
+      opacity: 0.3;
+    }
+
+    &--current {
+      border-bottom: 2px solid $color-white-1;
+
+      &:hover,
+      &:focus {
+        border-bottom-color: $color-red-1;
+      }
+
+      &:active {
+        border-bottom-color: $color-white-1;
+        opacity: 0.3;
+      }
+    }
+  }
 }

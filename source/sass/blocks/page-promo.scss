@@ -1,0 +1,37 @@
+.page-promo {
+  padding-top: 42px;
+  padding-bottom: 50px;
+  padding-right: $tablet-padding-horizontally;
+  padding-left: $tablet-padding-horizontally;
+}
+
+.page-promo__text {
+  max-width: 90%;
+  margin: 0 auto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: $color-blue-1;
+}
+
+@media (min-width: $tablet-width) {
+  .page-promo {
+    padding-top: 91px;
+    padding-bottom: 77px;
+  }
+
+  .page-promo__text {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-promo {
+    padding-bottom: 88px;
+  }
+
+  .page-promo__text {
+    max-width: 55%;
+  }
+}

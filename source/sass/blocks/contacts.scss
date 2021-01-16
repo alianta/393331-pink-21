@@ -1,24 +1,19 @@
 .contacts {
-  padding: 50px 20px 8px 20px;
+  padding: 17px 20px 24px 20px;
   text-align: center;
   position: relative;
 
   &::after {
     content: "";
-    width: 0;
-    height: 0;
+    z-index: 1;
     position: absolute;
     left: 0;
-    bottom: -35px;
-    border-left: 50vw solid transparent;
-    border-right: 50vw solid transparent;
-    border-top: 35px solid $color-white-1;
-    z-index: 1;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 130px;
-    padding-right: 130px;
+    bottom: -36px;
+    width: 100%;
+    height: 36px;
+    background-image: url("../img/white-isosceles-triangle-block.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 33px;
   }
 }
 
@@ -26,15 +21,44 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
+}
 
-  @media (min-width: $tablet-width) {
-    font-size: 40px;
-    line-height: 54px;
-    padding-left: 120px;
-    padding-right: 120px;
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding-bottom: 13px;
+
+    &::after {
+      bottom: -67px;
+      height: 68px;
+      background-size: 100% 68px;
+    }
   }
 
-  @media (min-width: $desktop-width) {
+  .contacts__header {
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-top: 26px;
+    margin-bottom: 23px;
+    font-size: 40px;
+    line-height: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-top: 33px;
+
+    &::after {
+      bottom: -120px;
+      height: 120px;
+      background-size: 100% 100px;
+    }
+  }
+
+  .contacts__header {
+    margin-bottom: 30px;
     font-size: 50px;
     line-height: 68px;
   }

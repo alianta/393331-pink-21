@@ -1,6 +1,65 @@
 .logo {
-  margin-bottom: 20px;
-  min-width: 145px;
-  justify-content: space-between;
-  align-items: center;
+  height: 40px;
+  width: 147px;
+
+  &:hover .logo__image,
+  &:focus .logo__image {
+    fill: $color-red-1;
+    color: $color-red-1;
+  }
+
+  &:active .logo__image {
+    fill: $color-white-opacity-30;
+    color: $color-white-opacity-30;
+  }
+}
+
+.logo__images {
+  height: 40px;
+  width: 147px;
+}
+
+.logo__pic {
+  fill: inherit;
+}
+
+.logo__text {
+  fill: currentColor;
+}
+
+.logo__image {
+  fill: $color-white-1;
+  color: $color-white-1;
+
+  &--desktop {
+    display: none;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .logo {
+    margin-bottom: 16px;
+  }
+
+  .logo__image {
+    width: 147px;
+    height: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    margin-left: 0;
+  }
+
+  .logo__image {
+    &--mobile-and-tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
 }

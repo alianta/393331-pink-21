@@ -1,23 +1,6 @@
 .research {
   display: none;
-  padding: 17px 20px 67px;
-  background-image: url("../img/timer.svg");
-  background-repeat: no-repeat;
-  background-position-x: 20px;
-  background-position-y: 17px;
-  min-height: 429px;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 130px;
-    padding-right: 130px;
-    background-color: $color-gray-1;
-    background-position-x: 130px;
-    background-size: 298px;
-  }
+  z-index: 1;
 }
 
 .research__promo,
@@ -25,12 +8,6 @@
 .research__link {
   margin-left: 50%;
   margin-right: 20px;
-
-  @media (min-width: $desktop-width) {
-    margin-right: 130px;
-    margin-left: 42%;
-    line-height: 30px;
-  }
 }
 
 .research__promo {
@@ -39,19 +16,62 @@
   line-height: 36px;
 }
 
-.research__text {
-  @media (min-width: $desktop-width) {
-    font-size: 18px;
-  }
-}
-
 .research__link {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: $color-red-1;
+}
 
-  @media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
+  .research {
+    display: block;
+    position: relative;
+    padding: 65px 20px;
+    background-color: $color-white-1;
+    background-image: url("../img/timer.svg");
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: 55%;
+  }
+
+  .research__promo {
+    margin-bottom: 5px;
+  }
+
+  .research__text {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .research {
+    padding-top: 116px;
+    padding-bottom: 112px;
+    padding-left: $desktop-padding-horizontally;
+    padding-right: $desktop-padding-horizontally;
+    background-color: $color-gray-1;
+    background-position-x: 130px;
+    background-position-y: 44%;
+    background-size: 298px;
+  }
+
+  .research__promo,
+  .research__text,
+  .research__link {
+    margin-left: 39%;
+    line-height: 30px;
+  }
+
+  .research__text {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+
+  .research__link {
     font-size: 18px;
   }
 }

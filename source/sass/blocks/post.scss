@@ -1,29 +1,11 @@
 .post {
   color: $color-blue-1;
   padding-bottom: 20px;
-
-  @media (min-width: $tablet-width) {
-    width: 48%;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 32%;
-  }
-
-  &--panorama-of-day {
-    @media (min-width: $tablet-width) {
-      width: 100%;
-    }
-  }
 }
 
 .post__data {
   background-color: $color-gray-1;
   padding: 25px 17px;
-
-  @media (min-width: $tablet-width) {
-    padding: 30px;
-  }
 }
 
 .post__author {
@@ -51,4 +33,24 @@
   display: block;
   width: 100%;
   height: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .post {
+    width: 48%;
+
+    &--panorama-of-day {
+      width: 100%;
+    }
+  }
+
+  .post__data {
+    padding: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post {
+    width: 32%;
+  }
 }

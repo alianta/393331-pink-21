@@ -1,54 +1,46 @@
 .intro {
   position: relative;
-  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 732px;
   margin-top: -66px;
   text-align: center;
   font-weight: normal;
   color: $color-white-1;
-  background-image: url("../img/intro-back.jpg");
-  background-position: center;
-  background-size: cover;
+  background-image: url("../img/intro-back-mobile.jpg");
+  background-position: center top;
+  background-size: 100%;
   background-color: $color-blue-2;
   background-repeat: no-repeat;
   border-top: 1px solid $color-black-opacity-30;
 
   &--phone {
-    min-height: 462px;
-
-    &::after {
+    &::before {
       content: " ";
-      background-image: url("../img/phone-heand-mobile.png");
+      background-image: url("../img/phone-hand-mobile.png");
       background-repeat: no-repeat;
       height: 286px;
       width: 320px;
       display: block;
-      bottom: 0;
+      top: 175px;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
     }
   }
+
+  &--catalog {
+    min-height: 238px;
+  }
 }
 
 .intro__slogan {
-  margin-top: 92px;
+  margin-top: 88px;
   padding: 0 20px;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
-
-  @media (min-width: $tablet-width) {
-    max-width: 290px;
-    font-size: 40px;
-    line-height: 48px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 340px;
-    font-size: 50px;
-    line-height: 68px;
-    margin-left: 130px;
-  }
 }
 
 .intro__header {
@@ -65,4 +57,85 @@
   background-color: $color-white-1;
   color: $color-blue-1;
   line-height: 30px;
+}
+
+.intro__name {
+  margin-top: 92px;
+  padding: 0 20px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 33px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    background-image: url("../img/intro-back-tablet.jpg");
+    margin-top: -109px;
+    justify-content: center;
+    min-height: 727px;
+
+    &--phone {
+      &::before {
+        background-image: url("../img/phone-hand-tablet.png");
+        height: 545px;
+        width: 660px;
+        bottom: 0;
+        top: auto;
+      }
+    }
+
+    &--catalog {
+      min-height: 438px;
+    }
+  }
+
+  .intro__slogan {
+    max-width: 300px;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 0;
+    margin-top: 122px;
+  }
+
+  .intro__name {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 207px 130px 124px 130px;
+    min-height: 852px;
+    background-image: url("../img/intro-back-desktop.jpg");
+
+    &--phone {
+      &::before {
+        background-image: url("../img/phone-hand-desktop.png");
+        height: 645px;
+        width: 1050px;
+        left: 56%;
+      }
+    }
+
+    &--catalog {
+      padding-top: 140px;
+      padding-bottom: 50px;
+      min-height: 393px;
+    }
+  }
+
+  .intro__slogan {
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .intro__name {
+    margin: 28px auto auto auto;
+    max-width: min-content;
+  }
 }
