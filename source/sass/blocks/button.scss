@@ -98,14 +98,19 @@
 
 @media (min-width: $desktop-width) {
   .button {
-    font-size: 21px;
+    font-size: 18px;
 
     &--form-send {
-      width: 43%;
+      width: 45%;
+      display: inline-block;
+      margin-top: 142px;
+      margin-bottom: 0;
     }
 
     &--form-cancel {
-      width: 43%;
+      width: 44%;
+      display: inline-block;
+      margin-left: 38px;
     }
   }
 }
