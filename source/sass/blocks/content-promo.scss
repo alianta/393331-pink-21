@@ -1,0 +1,31 @@
+.content-promo {
+  padding-top: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.content-promo__text {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .content-promo {
+    padding-top: 92px;
+  }
+  .content-promo__info {
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+
+  .content-promo__text {
+    display: inline-block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .content-promo__info {
+    max-width: 795px;
+    font-size: 18px;
+  }
+}
