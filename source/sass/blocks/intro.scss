@@ -90,7 +90,8 @@
       }
     }
 
-    &--catalog {
+    &--catalog,
+    &--competition {
       min-height: 438px;
     }
   }
@@ -106,6 +107,12 @@
   .intro__name {
     font-size: 50px;
     line-height: 68px;
+  }
+
+  .intro__competition-header {
+    font-size: 50px;
+    line-height: 68px;
+    margin-top: 161px;
   }
 }
 
@@ -131,6 +138,12 @@
       padding-bottom: 50px;
       min-height: 393px;
     }
+
+    &--competition {
+      padding-top: 140px;
+      padding-bottom: 50px;
+      min-height: 394px;
+    }
   }
 
   .intro__slogan {
@@ -143,5 +156,10 @@
   .intro__name {
     margin: 28px auto auto auto;
     max-width: min-content;
+  }
+
+  .intro__competition-header {
+    margin-bottom: 20px;
+    margin-top: 27px;
   }
 }
