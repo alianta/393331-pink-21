@@ -48,3 +48,41 @@
   padding-top: 52px;
   padding-bottom: 52px;
 }
+
+@media (min-width: $tablet-width) {
+  .pop-up {
+    width: 460px;
+  }
+
+  .pop-up__header {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .pop-up__information {
+    margin: 0 auto;
+    width: 78%;
+    font-size: 18px;
+  }
+
+  .pop-up__send {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pop-up {
+    width: 780px;
+
+    &--error {
+      .pop-up__send {
+        background: $color-gray-1;
+      }
+    }
+  }
+
+  .pop-up__information {
+    width: 55%;
+  }
+}
