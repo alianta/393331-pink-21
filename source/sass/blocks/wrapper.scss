@@ -2,10 +2,15 @@
   max-width: $mobile-width;
   min-width: $mobile-width;
   box-sizing: border-box;
-  padding-left: $mobile-padding-horizontally;
-  padding-right: $mobile-padding-horizontally;
   margin-left: auto;
   margin-right: auto;
+
+  &--first-type,
+  &--second-type {
+    width: 100%;
+    padding-left: $mobile-padding-horizontally;
+    padding-right: $mobile-padding-horizontally;
+  }
 
   &--second-type {
     background-color: $color-gray-1;

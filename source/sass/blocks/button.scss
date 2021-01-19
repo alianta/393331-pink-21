@@ -28,12 +28,32 @@
   &--second-type {
     margin: 0 20px;
     text-transform: uppercase;
-    padding: 23px;
+    padding: 20px;
     background-color: $color-green-2;
     border: 2px solid $color-green-2;
     border-radius: 1px;
     min-width: 276px;
     min-height: 59px;
+
+    &:hover {
+      background-color: $color-green-1;
+      border-color: $color-green-1;
+      color: $color-white-1;
+      box-shadow: none;
+    }
+
+    &:active {
+      color: $color-white-opacity-30;
+      border-color: $color-green-1;
+      background-color: $color-green-1;
+      outline: none;
+    }
+
+    &:disabled {
+      color: $color-white-1;
+      background-color: $color-gray-2;
+      border-color: $color-gray-2;
+    }
   }
 
   &--form-send {
