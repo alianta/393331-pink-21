@@ -3,6 +3,15 @@
   flex-direction: column;
 }
 
+.form__block-item {
+  padding-left: $mobile-padding-horizontally;
+  padding-right: $mobile-padding-horizontally;
+
+  &:nth-child(2n) {
+    background-color: $color-gray-1;
+  }
+}
+
 .form__section {
   display: flex;
   flex-direction: column;
@@ -172,16 +181,21 @@
 }
 
 .form__required-insrtuction {
+  display: inline-block;
+  width: 100%;
   text-align: center;
   text-transform: uppercase;
   padding-top: 38px;
   padding-bottom: 19px;
+
+  &--mark {
+    display: inline;
+    color: $color-red-1;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .form {
-    padding: 20px;
-
     >:nth-child(1),
     >:nth-child(4) {
       order: -3;
@@ -215,8 +229,94 @@
     }
   }
 
+  .form__block-item {
+    &:not(:first-child) {
+      .form__section {
+        border: 2px solid #e5e5e5;
+        padding: 54px 60px;
+      }
+    }
+
+    &:nth-child(2n) {
+      background-color: $color-white-1;
+    }
+  }
+
   .form__section {
     box-sizing: border-box;
+    margin-top: 45px;
+
+    &:first-child {
+      border: none;
+    }
+
+    &--no-legend {
+      .form__legend {
+        display: block;
+      }
+    }
+  }
+
+  .form__section-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 26px;
+    margin-bottom: 26px;
+
+    &--phone,
+    &--email {
+      display: flex;
+      flex-direction: column-reverse;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        width: 60px;
+        height: 56px;
+        background-color: $color-gray-2;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .form__text-label {
+        margin-left: 64px;
+        margin-top: 20px;
+        min-width: 100%;
+      }
+    }
+
+    &--phone {
+      &::after {
+        background-image: url("../img/phone-icon.svg");
+      }
+    }
+
+    &--email {
+      &::after {
+        background-image: url("../img/mail-icon.svg");
+      }
+    }
+  }
+
+  .form__input-text {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0;
+    box-sizing: border-box;
+  }
+
+  .form__text-label {
+    padding-left: 0;
+    padding-right: 18px;
+  }
+
+  .form__send-block {
+    display: flex;
+    align-items: center;
   }
 }
 
