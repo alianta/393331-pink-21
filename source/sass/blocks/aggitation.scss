@@ -1,6 +1,28 @@
 .aggitation {
-  padding: 0 20px;
+  padding-top: 23px;
+  padding-bottom: 42px;
+  padding-left: $mobile-padding-horizontally;
+  padding-right: $mobile-padding-horizontally;
   text-align: center;
   line-height: 30px;
   color: $color-blue-1;
+}
+
+.aggitation__text {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .aggitation {
+    font-size: 18px;
+    padding-top: 42px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .aggitation {
+    padding-top: 7px;
+    padding-bottom: 68px;
+  }
 }

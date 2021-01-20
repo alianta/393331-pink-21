@@ -2,6 +2,8 @@
   border: 3px solid $color-white-1;
   border-radius: 29px;
   padding: 16px;
+  height: min-content;
+  font-family: inherit;
   text-align: center;
   text-decoration: none;
   display: block;
@@ -26,38 +28,109 @@
   &--second-type {
     margin: 0 20px;
     text-transform: uppercase;
-    padding: 23px;
+    padding: 20px;
     background-color: $color-green-2;
     border: 2px solid $color-green-2;
     border-radius: 1px;
     min-width: 276px;
     min-height: 59px;
+
+    &:hover {
+      background-color: $color-green-1;
+      border-color: $color-green-1;
+      color: $color-white-1;
+      box-shadow: none;
+    }
+
+    &:active {
+      color: $color-white-opacity-30;
+      border-color: $color-green-1;
+      background-color: $color-green-1;
+      outline: none;
+    }
+
+    &:disabled {
+      color: $color-white-1;
+      background-color: $color-gray-2;
+      border-color: $color-gray-2;
+    }
   }
 
   &--form-send {
-    border-color: $color-red-1;
-    color: $color-red-1;
     width: 100%;
     margin-right: auto;
+    margin-top: 37px;
+    margin-bottom: 10px;
+    border-color: $color-red-1;
+    color: $color-red-1;
+    box-shadow: none;
+
+    &:hover,
+    &:focus {
+      color: $color-white-1;
+      background: $color-red-1;
+      box-shadow: inherit;
+    }
+
+    &:active {
+      color: $color-white-opacity-30;
+      box-shadow: inherit;
+    }
   }
 
   &--form-cancel {
     border-color: $color-blue-opacity-10;
     color: $color-blue-opacity-10;
     width: 100%;
+    box-shadow: none;
+
+    &:hover,
+    &:focus {
+      color: $color-blue-opacity-30;
+      border-color: $color-blue-opacity-30;
+      background-color: transparent;
+      box-shadow: inherit;
+    }
+
+    &:active {
+      color: $color-white-opacity-30;
+      background-color: $color-blue-1;
+      border-color: $color-blue-1;
+      opacity: 0.3;
+      box-shadow: inherit;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    &--form-send {
+      margin-top: 65px;
+      margin-bottom: 23px;
+      width: 260px;
+    }
+
+    &--form-cancel {
+      width: 260px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .button {
-    font-size: 21px;
+    font-size: 18px;
 
     &--form-send {
-      width: 43%;
+      width: 45%;
+      display: inline-block;
+      margin-top: 142px;
+      margin-bottom: 0;
     }
 
     &--form-cancel {
-      width: 43%;
+      width: 44%;
+      display: inline-block;
+      margin-left: 38px;
     }
   }
 }

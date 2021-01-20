@@ -1,11 +1,43 @@
 .post {
+  width: 100%;
+  margin-bottom: 20px;
   color: $color-blue-1;
-  padding-bottom: 20px;
+  background-color: $color-gray-1;
+
+  &--panorama-of-day {
+    position: relative;
+    width: 100vw;
+    margin-left: -20px;
+    margin-right: -20px;
+    background-color: transparent;
+
+    &::before {
+      content: "панорама дня";
+      position: absolute;
+      box-sizing: border-box;
+      height: 36px;
+      padding: 6px 20px 14px 20px;
+      top: 0;
+      right: $mobile-padding-horizontally;
+      color: $color-white-1;
+      background-color: $color-red-1;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 24px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .post__data {
+      margin-right: $mobile-padding-horizontally;
+      margin-left: $mobile-padding-horizontally;
+      background-color: $color-gray-1;
+    }
+  }
 }
 
 .post__data {
-  background-color: $color-gray-1;
-  padding: 25px 17px;
+  padding: 18px 10px 18px 17px;
 }
 
 .post__author {
@@ -23,9 +55,14 @@
 }
 
 .post__liking {
+  padding-left: 32px;
+  padding-top: 11px;
   font-size: 12px;
   text-transform: uppercase;
   color: $color-red-1;
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
+  background-position-y: 16px;
 }
 
 .post__foto {
@@ -37,20 +74,77 @@
 
 @media (min-width: $tablet-width) {
   .post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 48%;
+    min-height: 460px;
+    margin-bottom: 16px;
 
     &--panorama-of-day {
-      width: 100%;
+      width: 100vw;
+      margin-bottom: 44px;
+
+      &::before {
+        top: 57px;
+      }
+
+      .post__data {
+        position: relative;
+      }
+
+      .post__liking {
+        position: absolute;
+        padding-right: 29px;
+        right: 30px;
+        top: 14px;
+        background-position-x: right;
+      }
     }
   }
 
   .post__data {
-    padding: 30px;
+    padding: 24px 30px 30px 26px;
+    flex-grow: 1;
+  }
+
+  .post__liking {
+    padding-right: 32px;
+    padding-left: 0;
+    background-position-x: right;
   }
 }
 
 @media (min-width: $desktop-width) {
   .post {
     width: 32%;
+    margin-bottom: 46px;
+    min-height: 560px;
+
+    &--panorama-of-day {
+      width: 100vw;
+      margin-bottom: 44px;
+      margin-left: -$desktop-padding-horizontally;
+      margin-right: -$desktop-padding-horizontally;
+
+      &::before {
+        top: 55px;
+        right: 129px;
+      }
+
+      .post__data {
+        position: relative;
+        margin-left: $desktop-padding-horizontally;
+        margin-right: $desktop-padding-horizontally;
+      }
+
+      .post__liking {
+        position: absolute;
+        padding-right: 29px;
+        right: 30px;
+        top: 14px;
+        background-position-x: right;
+      }
+    }
   }
 }
