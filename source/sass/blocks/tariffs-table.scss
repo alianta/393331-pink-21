@@ -1,8 +1,7 @@
 .tariffs-table {
   width: 348%;
   margin-bottom: 41px;
-  background-color: $color-white-1;
-  border-collapse: collapse;
+  border-spacing: 0;
   transform: translateX(-48%);
 }
 
@@ -10,11 +9,18 @@
   position: relative;
   padding: 12px 20px 30px 20px;
   color: $color-white-1;
-  border: 2px solid $color-gray-1;
   overflow: hidden;
 
-  &--empty {
-    background-color: $color-gray-1;
+  &:not(:first-child) {
+    background: $color-blue-1;
+
+    &:not(:nth-child(2)) {
+      border-left: 2px solid $color-gray-2;
+    }
+  }
+
+  &:last-child {
+    border-right: 2px solid $color-gray-2;
   }
 
   &--hit {
@@ -46,7 +52,25 @@
 
 .tariffs-table__tariff-names {
   text-align: center;
-  background: $color-blue-1;
+}
+
+.tariffs-table__option {
+  background-color: $color-white-1;
+
+  .tariffs-table__option-availability {
+    border-left: 2px solid $color-gray-2;
+    border-top: 2px solid $color-gray-2;
+  }
+
+  &:last-child {
+    .tariffs-table__option-availability {
+      border-bottom: 2px solid $color-gray-2;
+    }
+  }
+
+  .tariffs-table__option-availability:last-child {
+    border-right: 2px solid $color-gray-2;
+  }
 }
 
 .tariffs-table__option-name {
@@ -54,11 +78,6 @@
   padding: 17px 20px;
   color: $color-blue-1;
   text-transform: uppercase;
-}
-
-.tariffs-table__option,
-.tariffs-table__option-availability {
-  border: 2px solid $color-gray-2;
 }
 
 .tariffs-table__option-availability {
@@ -93,9 +112,19 @@
     font-weight: 300;
   }
 
+  .tariffs-table__option {
+    &:last-child {
+      .tariffs-table__option-name {
+        border-bottom: 2px solid $color-gray-2;
+      }
+    }
+  }
+
   .tariffs-table__option-name {
     text-transform: none;
     padding: 10px 15px;
+    border-left: 2px solid $color-gray-2;
+    border-top: 2px solid $color-gray-2;
   }
 
   .tariffs-table__option-availability {
