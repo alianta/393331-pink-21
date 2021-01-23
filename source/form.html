@@ -73,7 +73,21 @@
         <path d="M1.834 12.809a1.257 1.257 0 01-1.285.03 1.097 1.097 0 01-.443-.457.97.97 0 01-.092-.603V1.221A.97.97 0 01.106.618C.2.429.355.27.549.16a1.256 1.256 0 011.285.031l12.4 5.502c1.022.445 1.022 1.169 0 1.614l-12.4 5.502z"/>
       </symbol>
     </svg>
-
+    <!--
+      состояния меню
+      1) Открытое меню в потоке при отключённом JavaScript
+        - у main-nav__toggle добавлен класс main-nav__toggle--no-js и отсутствует класс main-nav__toggle--closed
+        - у main-nav__list отсутствует класс main-nav__list--closed
+        - у header отсутствует класс header--nav-closed
+      2) Открытое меню вне потока при включённом JavaScript
+      - у main-nav__toggle отсутствует класс main-nav__toggle--no-js
+      - у main-nav__list отсутствует класс main-nav__list--closed
+      - у header отсутствует класс header--nav-closed
+      3) Закрытое меню вне потока при включённом JavaScript
+      - у main-nav__toggle отсутствует класс main-nav__toggle--no-js и добавлен класс main-nav__toggle--closed
+      - у main-nav__list добавлен класс main-nav__list--closed
+      - у header добавлен класс header--nav-closed
+    -->
     <header class="header">
       <div class="header__logo-wrapper">
         <a class="logo header__logo" href="index.html">
