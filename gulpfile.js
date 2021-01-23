@@ -29,7 +29,7 @@ exports.html = html;
 const scripts = () => {
   return gulp.src("source/js/*.js")
   .pipe(uglify())
-  .pipe(rename("script.min.css"))
+  .pipe(rename("script.min.js"))
   .pipe(gulp.dest("build/js"))
   .pipe(sync.stream());
 }
@@ -77,7 +77,9 @@ const copy = () => {
   return gulp.src([
     "source/fonts/*.{woff,woff2}",
     "source/img/**/*.{jpg,png,svg}",
-    "!source/img/logo/*.*"
+    "!source/img/logo/*.*",
+    "source/css/style.css",
+    "source/js/script.js"
   ],
   {
     base: "source"
