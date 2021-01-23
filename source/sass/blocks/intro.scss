@@ -4,7 +4,6 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 732px;
-  margin-top: -66px;
   text-align: center;
   font-weight: normal;
   color: $color-white-1;
@@ -90,7 +89,6 @@
 @media (min-width: $tablet-width) {
   .intro {
     background-image: url("../img/intro-back-tablet.jpg");
-    margin-top: -109px;
     justify-content: center;
     min-height: 727px;
 

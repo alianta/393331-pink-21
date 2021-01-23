@@ -77,17 +77,17 @@
       1) Открытое меню в потоке при отключённом JavaScript
         - у main-nav__toggle добавлен класс main-nav__toggle--no-js и отсутствует класс main-nav__toggle--closed
         - у main-nav__list отсутствует класс main-nav__list--closed
-        - у header отсутствует класс header--nav-closed
+        - у header добавлен класс header--no-js отсутствует класс header--nav-closed
       2) Открытое меню вне потока при включённом JavaScript
       - у main-nav__toggle отсутствует класс main-nav__toggle--no-js
       - у main-nav__list отсутствует класс main-nav__list--closed
-      - у header отсутствует класс header--nav-closed
+      - у header отсутствуют классы header--nav-closed, header--no-js
       3) Закрытое меню вне потока при включённом JavaScript
       - у main-nav__toggle отсутствует класс main-nav__toggle--no-js и добавлен класс main-nav__toggle--closed
       - у main-nav__list добавлен класс main-nav__list--closed
-      - у header добавлен класс header--nav-closed
+      - у header добавлены класс header--nav-closed и отсутствует класс header--no-js
     -->
-    <header class="header">
+    <header class="header header--no-js">
       <div class="header__logo-wrapper">
         <a class="logo header__logo" href="index.html">
           <svg class="logo__images header__logo-images" width="147" height="40">

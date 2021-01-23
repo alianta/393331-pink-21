@@ -1,10 +1,16 @@
 .header {
   z-index: 1;
+  position: fixed;
+  width: 100%;
   padding-top: 23px;
   box-sizing: border-box;
   min-height: 66px;
   color: $color-white-1;
   background-color: $color-blue-1;
+
+  &--no-js {
+    position: inherit;
+  }
 }
 
 .header__logo-wrapper {
