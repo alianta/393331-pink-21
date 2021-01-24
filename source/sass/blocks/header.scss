@@ -1,7 +1,7 @@
 .header {
   z-index: 3;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   padding-top: 20px;
   box-sizing: border-box;
   min-height: 66px;
@@ -57,7 +57,6 @@
   .header {
     position: absolute;
     min-height: 110px;
-    padding-top: 30px;
   }
 
   .header__logo-wrapper {

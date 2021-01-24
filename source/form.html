@@ -23,33 +23,35 @@
       - у header добавлены класс header--nav-closed и отсутствует класс header--no-js
     -->
     <header class="header header--no-js">
-      <div class="header__logo-wrapper">
-        <a class="logo header__logo" href="index.html">
-          <svg class="logo__images header__logo-images" width="147" height="40">
-            <use class="logo__image logo__image--mobile-and-tablet" xlink:href="img/logo/sprite.svg#logo"></use>
-            <use class="logo__image logo__image--desktop" xlink:href="img/logo/sprite.svg#logo-desktop"></use>
-          </svg>
-        </a>
+      <div class="wrapper">
+        <div class="header__logo-wrapper">
+          <a class="logo header__logo" href="index.html">
+            <svg class="logo__images header__logo-images" width="147" height="40">
+              <use class="logo__image logo__image--mobile-and-tablet" xlink:href="img/logo/sprite.svg#logo"></use>
+              <use class="logo__image logo__image--desktop" xlink:href="img/logo/sprite.svg#logo-desktop"></use>
+            </svg>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <button class="main-nav__toggle main-nav__toggle--no-js" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current"  href="#">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML&nbsp;Academy</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <button class="main-nav__toggle main-nav__toggle--no-js" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current"  href="#">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML&nbsp;Academy</a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <main class="main">
       <section class="intro intro--competition">
