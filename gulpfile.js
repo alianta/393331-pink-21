@@ -76,9 +76,8 @@ exports.sprite = sprite;
 const copy = () => {
   return gulp.src([
     "source/fonts/*.{woff,woff2}",
-    "source/img/**/*.{jpg,png,svg}",
-    "!source/img/logo/*.*",
-    "source/css/style.css",
+    "source/img/*.{jpg,png,svg}",
+    "source/img/posts-foto/*.{jpg,png}",
     "source/js/script.js"
   ],
   {
@@ -109,6 +108,7 @@ const styles = () => {
       csso()
     ]))
     .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
@@ -148,9 +148,9 @@ const build = gulp.series(
   gulp.parallel(
     scripts,
     html,
-    sprite,
     copy,
     images,
+    sprite,
     createWebp
   )
 )
@@ -163,8 +163,8 @@ exports.default = gulp.series(
   gulp.parallel(
     scripts,
     html,
-    sprite,
     copy,
+    sprite,
     createWebp
   ),
   gulp.series(
