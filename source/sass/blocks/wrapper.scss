@@ -5,12 +5,12 @@
   margin-right: auto;
   overflow: hidden;
 
-    &--second-type {
-      min-height: 732px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
+  &--second-type {
+    min-height: 732px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: $tablet-width) {
