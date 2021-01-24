@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <!-- для pixel perfect
+    <!-- для pixel perfect -->
 
     <style>
       HTML {
@@ -30,7 +30,7 @@
     </style>
     <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet" type="text/css">
     <script src="../node_modules/pixel-glass/script.js"></script>
-  -->
+
     <link href="css/style.min.css" rel="stylesheet" type="text/css">
   </head>
   <body class="page__body">
@@ -50,40 +50,46 @@
       - у header добавлены класс header--nav-closed и отсутствует класс header--no-js
     -->
     <header class="header header--no-js">
-      <div class="header__logo-wrapper">
-        <a class="logo header__logo" href="index.html">
-          <svg class="logo__images header__logo-images" width="147" height="40">
-            <use class="logo__image logo__image--mobile-and-tablet" xlink:href="img/logo/sprite.svg#logo"></use>
-            <use class="logo__image logo__image--desktop" xlink:href="img/logo/sprite.svg#logo-desktop"></use>
-          </svg>
-        </a>
+      <div class="wrapper">
+        <div class="header__logo-wrapper">
+          <a class="logo header__logo" href="index.html">
+            <svg class="logo__images header__logo-images" width="147" height="40">
+              <use class="logo__image logo__image--mobile-and-tablet" xlink:href="img/logo/sprite.svg#logo"></use>
+              <use class="logo__image logo__image--desktop" xlink:href="img/logo/sprite.svg#logo-desktop"></use>
+            </svg>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <button class="main-nav__toggle main-nav__toggle--no-js" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current" href="#">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML&nbsp;Academy</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <button class="main-nav__toggle main-nav__toggle--no-js" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current" href="#">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML&nbsp;Academy</a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <main class="main">
       <section class="intro intro--catalog">
-        <h1 class="intro__name">Фотографии пользователей</h1>
+        <div class="wrapper">
+          <h1 class="intro__name">Фотографии пользователей</h1>
+        </div>
       </section>
       <section class="page-promo">
-        <h2 class="page-promo__text">Взгляните на&nbsp;фотографии, которые выкладывают пользователи! Видите, как не&nbsp;хватает ваших?</h2>
+        <div class="wrapper">
+          <h2 class="page-promo__text">Взгляните на&nbsp;фотографии, которые выкладывают пользователи! Видите, как не&nbsp;хватает ваших?</h2>
+        </div>
       </section>
       <div class="catalog">
         <div class="post post--panorama-of-day">
