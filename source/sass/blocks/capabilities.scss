@@ -57,9 +57,10 @@
     &::after {
       height: 547px;
       width: 268px;
-      left: 0;
+      left: calc(50% - 444px);
+      bottom: -65px;
       background-image: url("../img/iphone-hello-tablet.png");
-      transform: translate(7%, 24px);
+      transform: translateX(50%);
     }
   }
 

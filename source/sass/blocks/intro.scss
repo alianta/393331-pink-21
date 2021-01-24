@@ -1,8 +1,8 @@
 .intro {
   position: relative;
-  display: flex;
+ /* display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between;*/
   min-height: 732px;
   text-align: center;
   font-weight: normal;
@@ -21,7 +21,8 @@
       background-size: 100%;
       background-repeat: no-repeat;
       height: 286px;
-      width: 320px;
+      width: 100%;
+      max-width: $mobile-width;
       display: block;
       top: 175px;
       position: absolute;
@@ -96,8 +97,10 @@
       &::before {
         background-image: url("../img/phone-hand-tablet.png");
         height: 545px;
-        width: 660px;
+        width: 100%;
+        max-width: $tablet-width;
         bottom: 0;
+        top: auto;
       }
     }
 

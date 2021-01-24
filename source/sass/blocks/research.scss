@@ -31,7 +31,7 @@
     background-color: $color-white-1;
     background-image: url("../img/timer.svg");
     background-repeat: no-repeat;
-    background-position-x: 20px;
+    background-position-x: calc(50% - 191px);
     background-position-y: 55%;
   }
 

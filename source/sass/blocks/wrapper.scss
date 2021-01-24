@@ -1,25 +1,30 @@
 .wrapper {
   max-width: $mobile-width;
-  min-width: $mobile-width;
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 
-  &--first-type,
-  &--second-type {
-    width: 100%;
-    padding-left: $mobile-padding-horizontally;
-    padding-right: $mobile-padding-horizontally;
-  }
-
-  &--second-type {
-    background-color: $color-gray-1;
-  }
+    &--second-type {
+      min-height: 732px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
 }
 
 @media (min-width: $tablet-width) {
   .wrapper {
     max-width: $tablet-width;
+
+    &--second-type {
+      min-height: 729px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: transparent;
+    }
   }
 }
 
