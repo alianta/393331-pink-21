@@ -113,6 +113,12 @@
     &--form-cancel {
       width: 260px;
     }
+
+    &--second-type {
+      min-width: 300px;
+      min-height: 64px;
+      margin-top: 10px;
+    }
   }
 }
 
@@ -131,6 +137,11 @@
       width: 44%;
       display: inline-block;
       margin-left: 38px;
+    }
+
+    &--second-type {
+      margin-left: 0;
+      font-size: 18px;
     }
   }
 }

@@ -6,6 +6,7 @@
   padding: 40px 20px;
   margin: 0 auto;
   box-sizing: border-box;
+  min-width: $mobile-width;
 }
 
 .footer__logo {
@@ -24,11 +25,16 @@
 @media (min-width: $tablet-width) {
   .footer {
     padding-top: 21px;
-    padding-bottom: 24px;
+    padding-bottom: 8px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
     min-width: $tablet-width;
+
+    &--second-type {
+      padding-top: 70px;
+      padding-bottom: 4px;
+    }
   }
 
   .footer__logo {
@@ -38,8 +44,10 @@
 
 @media (min-width: $desktop-width) {
   .footer {
-    padding-top: 88px;
-    padding-bottom: 59px;
+    padding-top: 58px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
     min-width: 960px;
   }
 }

@@ -75,8 +75,8 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    padding-left: $desktop-padding-horizontally;
-    padding-right: $desktop-padding-horizontally;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 166px;
     padding-bottom: 5px;
     background-image: url("../img/quotes.svg");

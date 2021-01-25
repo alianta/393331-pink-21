@@ -118,12 +118,13 @@
   .intro__name {
     font-size: 50px;
     line-height: 68px;
+    margin-top: 175px;
   }
 
   .intro__competition-header {
     font-size: 50px;
     line-height: 68px;
-    margin-top: 161px;
+    margin-top: 176px;
   }
 }
 
@@ -143,17 +144,17 @@
   .intro {
     justify-content: space-between;
     box-sizing: border-box;
-    padding: 207px 130px 124px 130px;
+    padding: 207px 10px 124px 10px;
     min-height: 235px;
     background-image: url("../img/intro-back-desktop.jpg");
+    background-size: cover;
 
     &--phone {
       &::before {
         background-image: url("../img/phone-hand-desktop.png");
-        height: 645px;
-        width: 1050px;
-        left: 56%;
-        max-width: 100%;
+        max-width: 960px;
+        height: 100%;
+        bottom: auto;
       }
     }
 

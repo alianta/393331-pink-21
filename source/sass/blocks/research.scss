@@ -50,10 +50,10 @@
   .research {
     padding-top: 116px;
     padding-bottom: 112px;
-    padding-left: $desktop-padding-horizontally;
-    padding-right: $desktop-padding-horizontally;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: $color-gray-1;
-    background-position-x: 130px;
+    background-position-x: calc(50% - 320px);
     background-position-y: 44%;
     background-size: 298px;
   }

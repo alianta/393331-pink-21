@@ -55,15 +55,18 @@
     </header>
     <main class="main">
       <section class="intro intro--competition">
-        <h1 class="intro__competition-header">Конкурс на&nbsp;самое безбашенное путешествие с&nbsp;Пинк</h1>
-        </section>
-      <div class="content-promo wrapper wrapper--first-type">
-        <p class="content-promo__info">
-          Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на вашу бонусную карту!
-          <span class="content-promo__text">Пожалуйста, заполните форму ниже:</span>
-        </p>
+        <div class="wrapper">
+          <h1 class="intro__competition-header">Конкурс на&nbsp;самое безбашенное путешествие с&nbsp;Пинк</h1>
+        </div>
+      </section>
+      <div class="content-promo">
+        <div class="wrapper">
+          <p class="content-promo__info">
+            Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на вашу бонусную карту!
+            <span class="content-promo__text">Пожалуйста, заполните форму ниже:</span>
+          </p>
+        </div>
       </div>
-
       <form id="form-competition" class="form" action="https://echo.htmlacademy.ru/" method="get">
         <div class="form__block-item">
           <fieldset class="form__section">
@@ -130,11 +133,13 @@
         </div>
         <div class="form__send-block">
           <button class="button button--second-type" type="submit">Отправить форму</button>
-          <span class="form__required-insrtuction"><span class="form__required-insrtuction form__required-insrtuction--mark">*</span> — обязательные поля</span>
+          <span class="form__required-insrtuction">
+            <span class="form__required-insrtuction form__required-insrtuction--mark">*</span>— обязательные <span class="form__required-insrtuction form__required-insrtuction--addition-text">для заполнения </span>поля
+            </span>
         </div>
       </form>
     </main>
-    <footer class="footer">
+    <footer class="footer footer--second-type">
       <a class="logo footer__logo" href="index.html" aria-label="Pink">
         <svg class="logo__images footer__logo-images" width="147" height="40">
           <use class="logo__image logo__image--mobile-and-tablet" xlink:href="img/logo/sprite.svg#logo"></use>
