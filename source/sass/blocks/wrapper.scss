@@ -30,13 +30,17 @@
 
 @media (min-width: $desktop-width) {
   .wrapper {
-    max-width: $desktop-width;
+    max-width: $desktop-width-only;
     display: flex;
     justify-content: space-between;
     min-height: auto;
 
     &--third-type {
       display: block;
+    }
+
+    &--another-color {
+      background-color: $color-gray-1;
     }
   }
 }

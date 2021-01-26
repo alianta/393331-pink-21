@@ -52,6 +52,36 @@
 @media (min-width: $tablet-width) {
   .pop-up {
     width: 460px;
+
+    &--success {
+      .pop-up__send {
+        padding-top: 38px;
+      }
+
+      .pop-up__header {
+        padding-top: 32px;
+      }
+
+      .pop-up__text {
+        margin-bottom: 29px;
+      }
+    }
+
+    &--error {
+      .pop-up__send {
+        padding-top: 24px;
+      }
+
+      .pop-up__header {
+        width: 70%;
+        margin: 0 auto 24px auto;
+      }
+
+      .pop-up__text {
+        width: 85%;
+        margin: 0 auto;
+      }
+    }
   }
 
   .pop-up__header {

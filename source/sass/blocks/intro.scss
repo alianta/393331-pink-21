@@ -148,13 +148,17 @@
     min-height: 235px;
     background-image: url("../img/intro-back-desktop.jpg");
     background-size: cover;
+    overflow: hidden;
 
     &--phone {
       &::before {
         background-image: url("../img/phone-hand-desktop.png");
+        background-position: center top;
         max-width: 960px;
         height: 100%;
         bottom: auto;
+        background-size: auto;
+        left: 56%;
       }
     }
 
@@ -199,6 +203,8 @@
     &--phone {
       &::before {
         background-image: url("../img/phone-hand-desktop-x2.png");
+        background-size: 100%;
+        left: 50%;
       }
     }
   }

@@ -3,3 +3,9 @@
   padding-right: $mobile-padding-horizontally;
   padding-left: $mobile-padding-horizontally;
 }
+
+@media (min-width: $desktop-width) {
+  .create-post {
+    background-color: inherit;
+  }
+}

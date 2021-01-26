@@ -202,6 +202,9 @@
 @media (min-width: $desktop-width) {
   .post-form {
     justify-content: space-between;
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 60px;
   }
 
   .post-form__filter-block {
