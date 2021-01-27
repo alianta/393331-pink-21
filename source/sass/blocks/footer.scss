@@ -50,6 +50,10 @@
     padding-right: 0;
     min-width: $desktop-width-only;
 
+    &--first-type {
+      padding-top: 54px;
+    }
+    
     &--second-type {
       padding-top: 88px;
     }
