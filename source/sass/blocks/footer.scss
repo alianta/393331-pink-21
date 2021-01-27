@@ -31,8 +31,12 @@
     align-items: flex-start;
     min-width: $tablet-width;
 
-    &--second-type {
+    &--first-type {
       padding-top: 70px;
+    }
+
+    &--second-type {
+      padding-top: 24px;
       padding-bottom: 4px;
     }
   }
@@ -44,7 +48,7 @@
 
 @media (min-width: $desktop-width) {
   .footer {
-    padding-top: 58px;
+    padding-top: 50px;
     padding-bottom: 40px;
     padding-left: 0;
     padding-right: 0;
@@ -53,7 +57,7 @@
     &--first-type {
       padding-top: 54px;
     }
-    
+
     &--second-type {
       padding-top: 88px;
     }
